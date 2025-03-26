@@ -1,0 +1,27 @@
+ DO 135 IM = 1,NMMOD   ! DO LOOP up to max. number of modes.
+      IF(IM.EQ.NREL) GO TO 135  ! Don't check mode for MRM -- found already by RELBIL.FOR.
+      IF(HP(IM).LE.0.) GO TO 135  ! I'm not sure what this does for HP less than zero.
+C     Check on Multipath Time Delay criterion set by operator
+      IF(ABS(TIMED(IM)-TTIM).LE.DMP) GO TO 135
+
+C     Check on Multipath Power criterion set by operator.
+C     The logic of this next part is revised from original code.
+
+C     If TLOSS(IM) is less than XTLOS, then mode being checked is stronger than MRM.
+C     (This often results when a mode with a lower number of hops is chosen as MRM.) 
+C     In this case, we want to set MPROB = reliability of the mode being checked.
+
+      IF(TLOSS(IM).LT.XTLOS) THEN
+        GO TO 134
+      ELSEIF(ABS(TLOSS(IM)-XTLOS).GT.PMP) THEN 
+C       The TRANS. LOSS of mode being checked doesn't fall within range of PMP 
+C       from XTLOS. So don't set MPROB -- skip to end of DO LOOP
+        GO TO 135
+      ELSE
+C       The TRANS. LOSS of mode being checked does fall in range of PMP from XTLOS.
+C       Set MPROB.
+        GO TO 134
+      END IF
+134   PROBMP(IF)=AMAX1(PROBMP(IF),RELY(IM))
+135 CONTINUE
+

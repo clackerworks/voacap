@@ -1,0 +1,743 @@
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<VOACAPW>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<DATA@>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0051)       if(montha(n).eq.0.) go to 125
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+    NO ERRORS,1 WARNINGS  [<VOACAP>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GETTR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<CIRCANT>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<READ_BIN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<HARRIS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SETVARS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0112)       if(montha(nmonths).eq.0) go to 25
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+    NO ERRORS,1 WARNINGS  [<AREAMAP>FTN77 Ver 4.02]
+    NO ERRORS  [<GETFREQS>FTN77 Ver 4.02]
+    NO ERRORS  [<ANTFILE_NAME>FTN77 Ver 4.02]
+    NO ERRORS  [<GETTRA>FTN77 Ver 4.02]
+    NO ERRORS  [<COL_FMT>FTN77 Ver 4.02]
+    NO ERRORS  [<COLORTAB>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0097)          if(itr.eq.2 .and. rgain.ne.0.) design_freq=rgain   ! fix isotrope gain
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0104)          if(freqarea(2).ne.0.) go to 200      !  point-to-point
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+    NO ERRORS,2 WARNINGS  [<ANTCALC>FTN77 Ver 4.02]
+    NO ERRORS  [<ANTSAVE>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<ALLMODES>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<ALOSFV>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<ANOIS1>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<BABS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<BATCH>FTN77 Ver 4.02]
+    NO ERRORS  [<BENCHFIX>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<BATCH_S>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<BENDY>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<CISI>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<CNGTIM>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<CONVH>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<CURMUF>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<DAZEL>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0240)       IF(XNOISE.NE.0.) NOISE = XNOISE
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0297)       if(offazim(iantr).eq.-999.) then      !  area coverage
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0326)       IF(FREL(1).eq.0.) then
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0673)       END
+WARNING - Label 1402 has not been referenced
+WARNING - Label 470 has not been referenced
+WARNING - Label 1502 has not been referenced
+WARNING - Label 1403 has not been referenced
+WARNING - Label 1401 has not been referenced
+WARNING - Label 485 has not been referenced
+WARNING - Label 1406 has not been referenced
+WARNING - Label 430 has not been referenced
+COMMENT - ARRAY91 has not been used
+    NO ERRORS,11 WARNINGS,1 COMMENTS  [<DECRED>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<DEL_ABT>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<DISTXY>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<EF1VAR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<ESIND>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<ESMOD>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0352)       END
+WARNING - Label 95 has not been referenced
+    NO ERRORS,1 WARNINGS  [<ESREG>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<F2DIS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<F2VAR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<FDIST>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<FINDF>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<FIXLIN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<FLOLIN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<FNORML>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<FOBBY>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<FRQCOM>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0057) 20    if(offazim(iat).eq.-999.) go to 50     !  area coverage antenna
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+    NO ERRORS,1 WARNINGS  [<GAIN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GENFAM>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GENION>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GENOIS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0184)       END
+WARNING - Label 66 has not been referenced
+WARNING - Label 100 has not been referenced
+    NO ERRORS,2 WARNINGS  [<GEOM>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GEOTIM>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GETHP>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GETKMF>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GETTOP>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GMLOSS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GPHBOD>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0014)       if(x.ne.0. .or. y.ne.0.) then
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+    NO ERRORS,2 WARNINGS  [<GRIDXY>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0070)       if(frel(nf).eq.0.) go to 6
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+    NO ERRORS,1 WARNINGS  [<HFAREA>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0117)       if(frel(nf).eq.0.) go to 20
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0328)       END
+WARNING - Label 260 has not been referenced
+WARNING - Label 491 has not been referenced
+    NO ERRORS,3 WARNINGS  [<HFMUFS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0073)       if(frel(nfreqs).eq.0.) go to 20
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+    NO ERRORS,1 WARNINGS  [<HFMUFS2>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<INMUF>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<IONPLT>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<IONSET>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0181)       END
+WARNING - Label 190 has not been referenced
+    NO ERRORS,1 WARNINGS  [<LECDEN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0147)       END
+WARNING - Label 330 has not been referenced
+    NO ERRORS,1 WARNINGS  [<LISTIN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0156)         IF((GML(IA,K).EQ.-999..AND.FHP(IA,K).EQ.999.).OR.
+0157)      1  (ANDVX(IA,K).EQ.1000..AND.ADVX(IA,K).EQ.1000.))THEN
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+    NO ERRORS,4 WARNINGS  [<LNGPAT>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<LUFFY>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<MAGFIN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<MAGVAR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<MONITR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<MPATH>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<NOISY>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<NOMMUF>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0165)       END
+WARNING - Label 625 has not been referenced
+    NO ERRORS,1 WARNINGS  [<OUTALL>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<OUTANT>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<OUTAREA>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0150)       END
+WARNING - Label 200 has not been referenced
+    NO ERRORS,1 WARNINGS  [<OUTBOD>FTN77 Ver 4.02]
+    NO ERRORS  [<OUTBOD2>FTN77 Ver 4.02]
+    NO ERRORS  [<OUTBOD3>FTN77 Ver 4.02]
+    NO ERRORS  [<OUTBOD4>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<OUTGPH>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<OUTION>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<OUTLAY>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<OUTLIN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<OUTMUF>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<OUTPAR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<OUT_SI>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<OUTTAB>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0147)       END
+WARNING - Label 161 has not been referenced
+    NO ERRORS,1 WARNINGS  [<OUTTOP>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<PEN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<PENANG>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<PRBMUF>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<PWRDB>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<REDMAP>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<REDAILY>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<REGMOD>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<RELBIL>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<RUNFREQS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SANG>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SELMOD>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SELTXR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SERPRB>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SETGPH>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SETLNG>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SETLUF>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0139)       END
+WARNING - Label 500 has not been referenced
+    NO ERRORS,1 WARNINGS  [<SETOUT>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SETTXR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SIGDIS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SQUEEZ>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SYSSY>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<TABBOD>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<TABS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<TIMVAR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<TXPWR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<VERSY>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<VIRTIM>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<XLIMIT6>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<XLIN>FTN77 Ver 4.02]
+[Salford SLINK/Win32 v1.26, Copyright (c) Salford Software Ltd. 1995-1998]
+$ LOAD voacapw.obj
+$ LOAD blkdat.obj
+$ LOAD harris.obj
+$ LOAD setvars.obj
+$ LOAD antcalc.obj
+$ LOAD areamap.obj
+$ LOAD ALLMODES.obj
+$ LOAD ALOSFV.obj
+$ LOAD ANOIS1.obj
+$ LOAD BABS.obj
+$ LOAD batch.obj
+$ LOAD batch_S.obj
+$ LOAD voacap.obj
+$ LOAD gettr.obj
+$ LOAD circant.obj
+$ LOAD read_bin.obj
+$ LOAD BENDY.obj
+$ LOAD CISI.obj
+$ LOAD CNGTIM.obj
+$ LOAD CONVH.obj
+$ LOAD CURMUF.obj
+$ LOAD dazel.obj
+$ LOAD decred.obj
+$ LOAD del_abt.obj
+$ LOAD distxy.obj
+$ LOAD EF1VAR.obj
+$ LOAD ESIND.obj
+$ LOAD ESMOD.obj
+$ LOAD ESREG.obj
+$ LOAD F2DIS.obj
+$ LOAD F2VAR.obj
+$ LOAD FDIST.obj
+$ LOAD FINDF.obj
+$ LOAD FIXLIN.obj
+$ LOAD FLOLIN.obj
+$ LOAD FNORML.obj
+$ LOAD FOBBY.obj
+$ LOAD FRQCOM.obj
+$ LOAD GAIN.obj
+$ LOAD GENFAM.obj
+$ LOAD GENION.obj
+$ LOAD GENOIS.obj
+$ LOAD GEOM.obj
+$ LOAD GEOTIM.obj
+$ LOAD GETHP.obj
+$ LOAD GETKMF.obj
+$ LOAD GETTOP.obj
+$ LOAD GMLOSS.obj
+$ LOAD GPHBOD.obj
+$ LOAD gridxy.obj
+$ LOAD hfarea.obj
+$ LOAD HFMUFS.obj
+$ LOAD HFMUFS2.obj
+$ LOAD INMUF.obj
+$ LOAD IONPLT.obj
+$ LOAD IONSET.obj
+$ LOAD LECDEN.obj
+$ LOAD listin.obj
+$ LOAD LNGPAT.obj
+$ LOAD LUFFY.obj
+$ LOAD MAGFIN.obj
+$ LOAD MAGVAR.obj
+$ LOAD monitr.obj
+$ LOAD MPATH.obj
+$ LOAD NOISY.obj
+$ LOAD NOMMUF.obj
+$ LOAD OUTALL.obj
+$ LOAD OUTANT.obj
+$ LOAD outarea.obj
+$ LOAD OUTBOD.obj
+$ LOAD OUTGPH.obj
+$ LOAD OUTION.obj
+$ LOAD OUTLAY.obj
+$ LOAD OUTLIN.obj
+$ LOAD OUTMUF.obj
+$ LOAD OUTPAR.obj
+$ LOAD OUT_si.obj
+$ LOAD OUTTAB.obj
+$ LOAD OUTTOP.obj
+$ LOAD PEN.obj
+$ LOAD PENANG.obj
+$ LOAD PRBMUF.obj
+$ LOAD pwrdb.obj
+$ LOAD REDMAP.obj
+$ LOAD REDAILY.obj
+$ LOAD REGMOD.obj
+$ LOAD RELBIL.obj
+$ LOAD runfreqs.obj
+$ LOAD SANG.obj
+$ LOAD SELMOD.obj
+$ LOAD SELTXR.obj
+$ LOAD SERPRB.obj
+$ LOAD SETGPH.obj
+$ LOAD SETLNG.obj
+$ LOAD SETLUF.obj
+$ LOAD SETOUT.obj
+$ LOAD SETTXR.obj
+$ LOAD SIGDIS.obj
+$ LOAD squeez.obj
+$ LOAD SYSSY.obj
+$ LOAD TABBOD.obj
+$ LOAD TABS.obj
+$ LOAD TIMVAR.obj
+$ LOAD txpwr.obj
+$ LOAD VERSY.obj
+$ LOAD VIRTIM.obj
+$ LOAD xlimit6.obj
+$ LOAD xlin.obj
+$ LE \lib32\hfmufesw.lib
+$ LE \lib32\wp10dwin.lib
+$ LE \lib32\voa_lib.lib
+$ FILE ..\..\bin_win\voacapw.exe
+Creating executable: ..\..\bin_win\voacapw.exe
+ftn77 /save voacapw.for
+ftn77 /save blkdat.for
+ftn77 /save voacap.for
+ftn77 /save gettr.for
+ftn77 /save circant.for
+ftn77 /save read_bin.for
+ftn77 /save harris.for
+ftn77 /save setvars.for
+ftn77 /save areamap.for
+ftn77 /save antcalc.for
+ftn77 /save ALLMODES.for
+ftn77 /save ALOSFV.for
+ftn77 /save ANOIS1.for
+ftn77 /save BABS.for
+ftn77 /save batch.for
+ftn77 /save batch_S.for
+ftn77 /save BENDY.for
+ftn77 /save CISI.for
+ftn77 /save CNGTIM.for
+ftn77 /save CONVH.for
+ftn77 /save CURMUF.for
+ftn77 /save dazel.for
+ftn77 /save decred.for
+ftn77 /save del_abt.for
+ftn77 /save distxy.for
+ftn77 /save EF1VAR.for
+ftn77 /save ESIND.for
+ftn77 /save ESMOD.for
+ftn77 /save ESREG.for
+ftn77 /save F2DIS.for
+ftn77 /save F2VAR.for
+ftn77 /save FDIST.for
+ftn77 /save FINDF.for
+ftn77 /save FIXLIN.for
+ftn77 /save FLOLIN.for
+ftn77 /save FNORML.for
+ftn77 /save FOBBY.for
+ftn77 /save FRQCOM.for
+ftn77 /save GAIN.for
+ftn77 /save GENFAM.for
+ftn77 /save GENION.for
+ftn77 /save GENOIS.for
+ftn77 /save GEOM.for
+ftn77 /save GEOTIM.for
+ftn77 /save GETHP.for
+ftn77 /save GETKMF.for
+ftn77 /save GETTOP.for
+ftn77 /save GMLOSS.for
+ftn77 /save GPHBOD.for
+ftn77 /save gridxy.for
+ftn77 /save hfarea.for
+ftn77 /save HFMUFS.for
+ftn77 /save HFMUFS2.for
+ftn77 /save INMUF.for
+ftn77 /save IONPLT.for
+ftn77 /save IONSET.for
+ftn77 /save LECDEN.for
+ftn77 /save listin.for
+ftn77 /save LNGPAT.for
+ftn77 /save LUFFY.for
+ftn77 /save MAGFIN.for
+ftn77 /save MAGVAR.for
+ftn77 /save monitr.for
+ftn77 /save MPATH.for
+ftn77 /save NOISY.for
+ftn77 /save NOMMUF.for
+ftn77 /save OUTALL.for
+ftn77 /save OUTANT.for
+ftn77 /save outarea.for
+ftn77 /save OUTBOD.for
+ftn77 /save OUTGPH.for
+ftn77 /save OUTION.for
+ftn77 /save OUTLAY.for
+ftn77 /save OUTLIN.for
+ftn77 /save OUTMUF.for
+ftn77 /save OUTPAR.for
+ftn77 /save OUT_si.for
+ftn77 /save OUTTAB.for
+ftn77 /save OUTTOP.for
+ftn77 /save PEN.for
+ftn77 /save PENANG.for
+ftn77 /save PRBMUF.for
+ftn77 /save pwrdb.for
+ftn77 /save REDMAP.for
+ftn77 /save REDAILY.for
+ftn77 /save REGMOD.for
+ftn77 /save RELBIL.for
+ftn77 /save runfreqs.for
+ftn77 /save SANG.for
+ftn77 /save SELMOD.for
+ftn77 /save SELTXR.for
+ftn77 /save SERPRB.for
+ftn77 /save SETGPH.for
+ftn77 /save SETLNG.for
+ftn77 /save SETLUF.for
+ftn77 /save SETOUT.for
+ftn77 /save SETTXR.for
+ftn77 /save SIGDIS.for
+ftn77 /save squeez.for
+ftn77 /save SYSSY.for
+ftn77 /save TABBOD.for
+ftn77 /save TABS.for
+ftn77 /save TIMVAR.for
+ftn77 /save txpwr.for
+ftn77 /save VERSY.for
+ftn77 /save VIRTIM.for
+ftn77 /save xlimit6.for
+ftn77 /save XLIN.for
+slink voacapw.lnk

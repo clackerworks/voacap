@@ -1,0 +1,17 @@
+#.SUFFIXES: .for
+#.for.obj:
+#	ftn95 $<  /BINARY
+
+wp10dwin.lib: antcal.obj azmax.obj bessel.obj antinit.obj antinit2.obj \
+	ccirgain.obj curcal.obj dirgain.obj gainorm.obj gainrel.obj \
+	len_trim.obj getantyp.obj file_nam.obj \
+	antfile.obj iant_idx.obj getdirs.obj getfiles.obj \
+	antmodel.obj ioninit.obj iongain.obj cisi.obj dazel0.obj \
+	logparm.obj parabol.obj parmprec.obj readant.obj refcof.obj \
+	setmaxga.obj surfim.obj trigfun.obj gainterp.obj gainterb.obj \
+	curtain.obj pattrn0.obj dbltrap.obj f2.obj curnorm.obj \
+	invcon.obj
+	del wp10dwin.lib
+	slink -archive:wp10dwin.lib -addobj:*.obj
+	del \lib32\wp10dwin.lib
+	copy wp10dwin.lib \lib32

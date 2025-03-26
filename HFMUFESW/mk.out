@@ -1,0 +1,179 @@
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0023)       IF (H2 .EQ. 0.0) GO TO 125
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+    NO ERRORS,1 WARNINGS  [<AGAUSS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<CANG>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<CMPINV>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<COLL>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<CSZ1>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<ECH>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0053)       IF (DETERM .EQ. 0.0) GO TO 155
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+    NO ERRORS,1 WARNINGS  [<MATINV>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0119)       DATA (XI (J), J = 1, 48) / - 0.99877100725, - 0.99353017227, - 0. 
+0120)      198412458372, - 0.97059159255, - 0.95298770316, - 0.93138669071, - 
+0121)      20.90587913672, - 0.87657202027, - 0.84358826162, - 0.80706620403, 
+0122)      3- 0.76715903252, - 0.72403413092, - 0.67787237963, - 0.62886739678
+0123)      4, - 0.57722472608, - 0.52316097472, - 0.46690290475, - 0.408686481
+0124)      599, - 0.34875588629, - 0.28736248736, - 0.22476379039, - 0.1612223
+0125)      65607, - 0.097004699209, - 0.032380170963, 0.032380170963, 0.097004
+0126)      7699209, 0.16122235607, 0.22476379039, 0.28736248736, 0.34875588629
+0127)      8, 0.40868648199, 0.46690290475, 0.52316097472, 0.57722472608, 0.62
+0128)      9886739678, 0.67787237963, 0.72403413092, 0.76715903252, 0.80706620
+0129)      A403, 0.84358826162, 0.87657202027, 0.90587913672, 0.93138669071, 0
+0130)      B.95298770316, 0.97059159255, 0.98412458372, 0.99353017227, 0.99877
+0131)      C100725/ 
+WARNING - Common variables should be predefined in a BLOCK DATA subprogram
+0132)       DATA (HH (J), J = 1, 48) / 0.0031533460523, 0.007327553901, 0.011 
+0133)      1477234579, 0.015579315723, 0.019616160457, 0.023570760839, 0.02742
+0134)      26509708, 0.031167227833, 0.034777222565, 0.038241351066, 0.0415450
+0135)      382943, 0.044674560857, 0.047616658492, 0.050359035554, 0.052890189
+0136)      4485, 0.055199503700, 0.057277292100, 0.059114839698, 0.06070443916
+0137)      56, 0.062039423160, 0.063114192286, 0.063924238585, 0.064466164436,
+0138)      6 0.064737696813, 0.064737696813, 0.064466164436, 0.063924238585, 0
+0139)      7.063114192286, 0.062039423160, 0.060704439166, 0.059114839698, 0.0
+0140)      857277292100, 0.055199503700, 0.052890189485, 0.050359035554, 0.047
+0141)      9616658492, 0.044674560857, 0.041545082943, 0.038241351066, 0.03477
+0142)      A7222565, 0.031167227833, 0.027426509708, 0.023570760839, 0.0196161
+0143)      B60457, 0.015579315723, 0.011477234579, 0.0073275539013, 0.00315334
+0144)      C60523/
+WARNING - Common variables should be predefined in a BLOCK DATA subprogram
+0343)       IF (SPHI2 .EQ. 0.0) GO TO 615 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0443)       IF (SPSI2 .EQ. 0.0) GO TO 615 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0469)       IF (SPHI2 .EQ. 0.0) GO TO 615 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0668)       IF (SPSI2 .EQ. 0.0) GO TO 615 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0733)       IF (U12 .EQ. 0.0) GO TO 390 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0744)       IF (U34 .EQ. 0.0) GO TO 615 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0745)  395  IF (U34 .EQ. 0.0) GO TO 400 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0800)       IF (AB4 .NE. 0.0) GO TO 14
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0810)       IF (AB5 .NE. 0.0) GO TO 16
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0816)       IF (SPSIPH2 .NE. 0.0) GO TO 18
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0828) 19    IF (CB .NE. 0.0) GO TO 20 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0904)       IF (SPHI2 .EQ. 0.0 .AND. SPHIP2 .EQ. 0.0) GO TO 615 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0905)       IF (SPHI2 .EQ. 0.0) GO TO 455 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+0917)  460  IF (SPHIP2 .EQ. 0.0) GO TO 465
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+1028)       IF (SPSI2 .EQ. 0.0) GO TO 615 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+1074)       IF (SPHI2 .EQ. 0.0) GO TO 565 
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+1080)       EPHI1 = CMPLX (0.0, 0.0)
+WARNING - Complex constant(s) required truncation
+1081)  570  IF (SPHIP2 .EQ. 0.0) GO TO 575
+WARNING - The use of .EQ. or .NE. with non-integer operands can produce
+misleading results
+1089)       EPHI2 = CMPLX (0.0, 0.0)
+WARNING - Complex constant(s) required truncation
+1331)       END
+WARNING - Label 620 has not been referenced
+    NO ERRORS,23 WARNINGS  [<MUFESGAN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<MUFESINT>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<MUTUAL>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<ONEJ>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<REACT>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<RESIST>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SIM>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SQMULT>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<ZMUT>FTN77 Ver 4.02]
+Creating archive: hfmufesw.lib
+        1 file(s) copied
+ftn77  agauss.for
+ftn77  cang.for
+ftn77  cmpinv.for
+ftn77  coll.for
+ftn77  csz1.for
+ftn77  ech.for
+ftn77  matinv.for
+ftn77  mufesgan.for
+ftn77  mufesint.for
+ftn77  mutual.for
+ftn77  onej.for
+ftn77  react.for
+ftn77  resist.for
+ftn77  sim.for
+ftn77  sqmult.for
+ftn77  zmut.for
+del hfmufesw.lib
+slink -archive:hfmufesw.lib -addobj:*.obj
+del \lib32\hfmufesw.lib
+copy hfmufesw.lib \lib32

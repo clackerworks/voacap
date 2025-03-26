@@ -1,0 +1,123 @@
+c# outbod.f
+      SUBROUTINE OUTBOD
+C--------------------------------
+C
+C     THIS ROUTINE OUTPUTS THE VARIABLES SET IN SUBROUTINE SETOUT
+C     DEPENDENT ON METHOD BUT THE USER MAY SPECIFY HIS OWN CHOICE OF
+C     VARIABLES TO OUTPUT BY INCLUDING A "BOTLINES" CONTROL CARD AND
+C     RUNNING METHOD 23.  THE ROUTINE USES A VECTORED FORMAT SCHEME AND
+C     CALLS SUBROUTINES FIXLIN AND FLOLIN TO OUTPUT THE LINE
+C
+      common /sncom/ snxx(13)
+      common /cgains/ gaint(13),gainr(13)
+      COMMON / ION / IHRE, IHRO, IHRS, LUFP, METHOD, NOISE, NPSL
+      COMMON / ALPHA / IMON(12), ITRAN(2), IRCVR(2), LBMAP(2), MODE(13),
+     A MODER(13), ITLAT, ITLONG, IRLAT, IRLONG, IRLATU, IRLONGU, NYEAR
+      CHARACTER IMON*3, NYEAR*5, ITRAN*10, IRCVR*10, LBMAP*10, ITLAT*1,
+     A ITLONG*1, IRLAT*1, IRLONG*1, IRLATU*1, IRLONGU*1, MODE*2, MODER*2
+      COMMON / CONTRL / IELECT(3), KTOUT(12), MONTHS(12), SUNSP(12),
+     A IANTOU, ICARD, INTEG, IRED, ISOUT, ISPROC, ISSN, ITYPE, JDASH,
+     B JFREQ, JLONG, KCARD, KRUN, MAPIN, MAXNAM, MONOLD, MOREM, MORES,
+     C NUMNAM, NUPROC, MAXMET, MSPEC, M100
+      COMMON / FILES / LUI, LUO, LU2, LU5, LU6, LU15, LU16, LU20, LU25,
+     A LU26, LU35
+      COMMON /DON /ALATD, AMIN, AMIND, BTR, BTRD, DLONG, DMP, ERTR, GCD,
+     1 GCDKM, PMP, PWR, TLAT, TLATD, TLONG, TLONGD, RSN, SIGTR, RLAT,
+     2 RLATD,RLONG,RLONGD,BRTD,FLUX,ULAT,ULATD,ULONG,ULONGD,SSN,D90R,
+     3 D50R,D10R,D90S,D50S,D10S
+      COMMON/LPATH/ GCDLNG,TXRGML(45,2),DELOPT,GMIN,YMIN,LTXRGM(2)
+      COMMON/FRQ/FREA(13),FREL(29),FREQ,JMODE,ITXRCP(2)
+      COMMON/MUFS/EMUF(24),F1MUF(24),F2MUF(24),ESMUF(24),ALLMUF(24)
+     1,FOT(24),XLUF(24),HPF(24),ANGMUF(24),MODMUF,SIGL(4),SIGU(4),DELMU
+     2F(4),HPMUF(4),HTMUF(4),FVMUF(4),AFMUF(4),NHOPMF(4),YFOT(4),YHPF(4)
+     3 ,YMUF(4)
+      COMMON /OUTPRT/ LINBOT(26), LINBD(14), LINTOP(15), LINTP(14),
+     A GRPTYP, JOUT, LINBYP, LINES, LINMAX, LINTYP, LPAGES, NLINE
+      COMMON / SON / ANGLE(13), ANGLER(13), CPROB(13), DBLOS(13),
+     A DBLOSL(13), DBLOSU(13), DBU(13), DELAY(13), DBW(13), NHP(13),
+     B XNYNOIS(13), PROBMP(13), RELIAB(13), SNDB(13), SNPR(13),
+     C SNRLW(13), SNRUP(13), SPROB(13), VHIGH(13), RNEFF(13),MDL(13)
+       CHARACTER MDL*1, slmdl*9
+      COMMON / TIME / IT, GMT, UTIME(24), GMTR, XLMT(24), ITIM, JTX
+      character jfmt*40
+      DATA ND/11/
+C.....THIS PROGRAM WILL WRITE 2 PLUS LINBOT(26) LINES. IT IS
+C     ASSUMED THAT THE LINE COUNT WAS CHECKED BY THE CALLING PROGRAM.
+      IFREQ=1
+ 
+ccc      IF(LINES.gt.LINTOP(15)) go to 200
+ccc      if(MSPEC.eq.121)then
+ccc        WRITE(LUO,1501)
+ccc 1501 FORMAT(/,' ',3X,'UT  MUF ',5x,'***MODEL  S=Short path  L=LONG Pa',
+ccc     +'th  M=Smoothed(VOA)')
+ccc      else
+ccc        WRITE(LUO,1500)
+ccc 1500 FORMAT(/,' ',3X,'UT  MUF ')
+ccc      ENDIF
+ccc      LINES=LINES+2
+200   if(MSPEC.ne.121) then
+         slmdl='         '
+      else
+         if(MDL(13).eq.'S')then
+            slmdl='/SP-Model'
+         else if(MDL(13).eq.'L')then
+            slmdl='/LP-Model'
+         else
+            slmdl='/Model***'
+         endif
+      end if
+      WRITE(LUO,1502)GMT,ALLMUF(IT),MDL(12),(FREL(IQ),MDL(IQ),IQ=1,ND),
+     +slmdl
+ 1502 FORMAT(/,' ',1X,F4.1,1X,12(F4.1,A1),'FREQ',a9)
+      if(ALLMUF(IT).gt.30.) then        !  no antenna support
+         nhp(12)=0
+         mode(12)='NA'
+         moder(12)='NA'
+         angle(12)=99.9
+         delay(12)=99.9
+         vhigh(12)=1000
+         dblos(12)=1000
+         dbu(12)=-999
+         dbw(12)=-999
+         sndb(12)=-999
+         snpr(12)=-999
+         reliab(12)=0.
+         probmp(12)=0.
+         sprob(12)=0.
+         snxx(12)=-999
+      end if
+      DO 210 IFQ = 2,ND
+      IF(FREL(IFQ).gt.0) IFREQ=IFQ
+  210 CONTINUE
+      JFREQ = -1
+      DO 225 IFQ = 1,IFREQ
+      IF(NHP(IFQ).gt.0) JFREQ=IFQ
+  225 CONTINUE
+      JFREQ = MIN0(ND+1, JFREQ)
+      IF(JFREQ.le.0) then         !  write all dashes
+         LINES=LINES+3
+         RETURN
+      end if
+      IF(JFREQ.ge.ND) then      !  write no dashes
+         jfmt='(6x,12(1x,i2,a2),1x,a6)'
+         JDASH = -1
+      else                      !  write some dashes
+         JDASH = ND - JFREQ
+         write(jfmt,226) jfreq+1,jdash
+226      format(4h(6x,,i2,11h(1x,i2,a2),,i2,14h(1x,a4),1x,a6))
+      end if
+
+      if(method.ne.23) then
+         do 500 lin=1,22                !  output in order on OUTLINES card
+         if(LINBOT(lin).gt.0) call outbod2(lin,jfmt)   !  output this parameter
+500      continue
+      else               !  for METHOD=23, output in order on BOTLINES card
+         do 510 i=1,14
+         lin=LINBD(i)
+         if(lin.gt.0) call outbod2(lin,jfmt)
+510      continue
+      end if
+      LINES = LINES + LINBOT(26) + 2
+      RETURN
+      END
+C--------------------------------

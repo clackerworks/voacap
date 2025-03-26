@@ -1,0 +1,140 @@
+</$objtype/mkfile
+F77 = f2c
+CC = ape/cc
+
+CFLAGS = -I $home/lib/f2c/include
+
+OFILES = \
+ALLMODES.o \
+ALOSFV.o \
+ANOIS1.o \
+ANTCALC.o \
+AREAMAP.o \
+BABS.o \
+BATCH.o \
+BATCH_S.o \
+BENDY.o \
+BLKDAT.o \
+CIRCANT.o \
+CISI.o \
+CNGTIM.o \
+CONVH.o \
+CURMUF.o \
+DAZEL.o \
+DECRED.o \
+DISTXY.o \
+EF1VAR.o \
+ESIND.o \
+ESMOD.o \
+ESREG.o \
+F2DIS.o \
+F2VAR.o \
+FDIST.o \
+FINDF.o \
+FIXLIN.o \
+FLOLIN.o \
+FNORML.o \
+FOBBY.o \
+FRQCOM.o \
+GAIN.o \
+GENFAM.o \
+GENION.o \
+#GENOIS_old.o \
+GEOM.o \
+GEOTIM.o \
+GETHP.o \
+GETKMF.o \
+GETTOP.o \
+GETTR.o \
+GMLOSS.o \
+GPHBOD.o \
+GRIDXY.o \
+HFAREA.o \
+HFMUFS.o \
+INMUF.o \
+INVCON.o \
+IONPLT.o \
+IONSET.o \
+LECDEN.o \
+LISTIN.o \
+LNGPAT.o \
+LUFFY.o \
+MAGFIN.o \
+MAGVAR.o \
+MONITR.o \
+MPATH.o \
+NOISY.o \
+NOMMUF.o \
+OUTALL.o \
+OUTANT.o \
+OUTAREA.o \
+OUTBOD.o \
+#OUTBOD2.o \
+OUTGPH.o \
+OUTION.o \
+OUTLAY.o \
+OUTLIN.o \
+OUTMUF.o \
+OUTPAR.o \
+OUTTAB.o \
+OUTTOP.o \
+OUT_SI.o \
+PEN.o \
+PENANG.o \
+PRBMUF.o \
+PWRDB.o \
+READ_asc.o \
+REDAILY.o \
+REDMAP.o \
+REGMOD.o \
+RELBIL.o \
+RUNFREQS.o \
+SANG.o \
+SELMOD.o \
+SELTXR.o \
+SERPRB.o \
+SETGPH.o \
+SETLNG.o \
+SETLUF.o \
+SETOUT.o \
+SETTXR.o \
+SETVARS.o \
+SIGDIS.o \
+SQUEEZ.o \
+SYSSY.o \
+TABBOD.o \
+TABS.o \
+TIMVAR.o \
+TXPWR.o \
+VERSY.o \
+VIRTIM.o \
+VOACAP.o \
+VOACAPW.o \
+XLIMIT6.o \
+XLIN.o \
+cancel.o \
+genois.o \
+harris.o \
+hfciraf.o \
+hfmufs2.o \
+outciraf.o \
+rdciraf.o \
+zones.o \
+
+
+
+%.c: %.f
+    $F77 $stem.f
+
+%.o: %.c
+    $CC -c $CFLAGS $stem.c
+
+voacap: $OFILES
+     $CC -o $target -I/usr/glenda/lib/f2c/include -L /usr/glenda/lib/f2c $newprereq -lap ../VOA_LIB/libsvoa.a8 ../WP10DWIN/libswp10.a8 ../HFMUFESW/libshfmuf.a8 -lf2c
+
+install:V:
+     mkdir -p $home/lib/fftpack
+     cp libsfftpack.a$O $home/lib/fftpack/libsfftpack.a
+
+clean:V:
+        rm -f voacap *.o *.c

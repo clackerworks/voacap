@@ -1,0 +1,95 @@
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+0121)       END
+WARNING - Label 200 has not been referenced
+    NO ERRORS,1 WARNINGS  [<DAZEL1>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<DEG2CHR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<DOSCOLR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<ICOLDOS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<COL_DOS>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<WINCOLR>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<CHARDEG>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<IT_EXIST>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<LCOUNT>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<RBLANKC>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SET_RUN>FTN77 Ver 4.02]
+    NO ERRORS  [<GET_RUN>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<SUFFIX>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<LCASE>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<UCASE>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<PWRCUT>FTN77 Ver 4.02]
+    NO ERRORS  [<DAYINTERP>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<GH_EXEC>FTN77 Ver 4.02]
+[Salford FTN77/Win32 v4.02, Copyright (c) Salford Software Ltd. 1988-1998]
+    Licensed to: Greg Hand
+    Organisation: U S Department of Commerce
+    NO ERRORS  [<YIELDIT>FTN77 Ver 4.02]
+Creating archive: voa_lib.lib
+        1 file(s) copied
+ftn77  dazel1.for
+ftn77  deg2chr.for
+ftn77  DOScolr.for
+ftn77  icolDOS.for
+ftn77  col_DOS.for
+ftn77  WINcolr.for
+ftn77  chardeg.for
+ftn77  it_exist.for
+ftn77  lcount.for
+ftn77  rblankc.for
+ftn77  set_run.for
+ftn77  suffix.for
+ftn77  lcase.for
+ftn77  ucase.for
+ftn77  pwrcut.for
+ftn77  gh_exec.for
+ftn77  yieldit.for
+del voa_lib.lib
+slink -archive:voa_lib.lib -addobj:*.obj
+del \lib32\voa_lib.lib
+copy voa_lib.lib \lib32

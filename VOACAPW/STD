@@ -1,0 +1,15 @@
+c******************************************************************
+c         for executing a program and waiting for it to finish
+      STDCALL MYCREATEPROCESS 'CreateProcessA' (VAL,STRING,VAL,VAL,
+     +    VAL,VAL,VAL,VAL,REF,REF):LOGICAL*4
+
+c          *** startup info structure ***
+      character startup*68
+      integer*4 cb,wShowWindow
+      equivalence (cb,startup(1:4)),(wShowWindow,startup(49:50))
+
+c          *** process info structure ***
+      character process*16
+      integer*4 hProcess
+      equivalence (hProcess,process(1:4))
+c******************************************************************

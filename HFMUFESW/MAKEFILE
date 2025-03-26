@@ -1,0 +1,21 @@
+
+hfmufesw.lib: agauss.obj\
+	cang.obj\
+	cmpinv.obj\
+	coll.obj\
+	csz1.obj\
+	ech.obj\
+	matinv.obj\
+	mufesgan.obj\
+	mufesint.obj\
+	mutual.obj \
+	onej.obj \
+	react.obj \
+	resist.obj \
+	sim.obj \
+	sqmult.obj \
+	zmut.obj
+	del hfmufesw.lib
+	slink -archive:hfmufesw.lib -addobj:*.obj
+	del \lib32\hfmufesw.lib
+	copy hfmufesw.lib \lib32

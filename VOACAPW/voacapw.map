@@ -1,0 +1,940 @@
+Linker Map of ..\..\bin_win\voacapw.exe  Tue Dec  6 21:12:47 2016
+
+
+
+Image base = 400000   Image align = 1000     File align = 200     
+
+Stack = 3200000  Heap = 100000  
+
+
+Entry point _SALFStartup at 00458bb0
+
+
+00400000  header                                  Linker defined
+
+
+Address   Name                                     File in which defined
+ 
+Code
+
+00401000    __clearwin                               c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+00401000    VOACAPW                                  c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+00401000    main                                     c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+00404ad0    SET_MAGNETIC_POLE                        c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+00404e80    DATA#                                    c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+00404ea0    COUNT_BATCH                              c:\itshfbc\win32\VOACAPW\cancel.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\CANCEL.FOR)
+00404f40    CANCEL_BATCH                             c:\itshfbc\win32\VOACAPW\cancel.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\CANCEL.FOR)
+00404f70    HARRIS                                   c:\itshfbc\win32\VOACAPW\harris.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\HARRIS.FOR)
+004058e0    SETVARS                                  c:\itshfbc\win32\VOACAPW\setvars.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SETVARS.FOR)
+00405b30    ANTCALC                                  c:\itshfbc\win32\VOACAPW\antcalc.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ANTCALC.FOR)
+00408580    ANTSAVE                                  c:\itshfbc\win32\VOACAPW\antcalc.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ANTCALC.FOR)
+00408670    ANTPRINT                                 c:\itshfbc\win32\VOACAPW\antcalc.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ANTCALC.FOR)
+00408690    AREAMAP                                  c:\itshfbc\win32\VOACAPW\areamap.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\AREAMAP.FOR)
+0040b180    GETFREQS                                 c:\itshfbc\win32\VOACAPW\areamap.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\AREAMAP.FOR)
+0040b4c0    ANTFILE_NAME                             c:\itshfbc\win32\VOACAPW\areamap.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\AREAMAP.FOR)
+0040b580    GETTRA                                   c:\itshfbc\win32\VOACAPW\areamap.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\AREAMAP.FOR)
+0040b6d0    COL_FMT                                  c:\itshfbc\win32\VOACAPW\areamap.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\AREAMAP.FOR)
+0040bb40    COLORTAB                                 c:\itshfbc\win32\VOACAPW\areamap.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\AREAMAP.FOR)
+0040bca0    ALLMODES                                 c:\itshfbc\win32\VOACAPW\ALLMODES.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ALLMODES.FOR)
+0040bf50    ALOSFV                                   c:\itshfbc\win32\VOACAPW\ALOSFV.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ALOSFV.FOR)
+0040c800    ANOIS1                                   c:\itshfbc\win32\VOACAPW\ANOIS1.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ANOIS1.FOR)
+0040c9f0    BABS                                     c:\itshfbc\win32\VOACAPW\BABS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BABS.FOR)
+0040cb50    BATCH                                    c:\itshfbc\win32\VOACAPW\batch.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BATCH.FOR)
+0040d230    BENCHFIX                                 c:\itshfbc\win32\VOACAPW\batch.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BATCH.FOR)
+0040d350    BATCH_S                                  c:\itshfbc\win32\VOACAPW\batch_S.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BATCH_S.FOR)
+0040da60    VOACAP                                   c:\itshfbc\win32\VOACAPW\voacap.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAP.FOR)
+0040eda0    GETTR                                    c:\itshfbc\win32\VOACAPW\gettr.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GETTR.FOR)
+0040eef0    CIRCANT                                  c:\itshfbc\win32\VOACAPW\circant.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\CIRCANT.FOR)
+0040f100    READ_ASC                                 c:\itshfbc\win32\VOACAPW\read_asc.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\READ_ASC.FOR)
+0040fe20    BENDY                                    c:\itshfbc\win32\VOACAPW\BENDY.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BENDY.FOR)
+0040fec0    CISI                                     c:\itshfbc\win32\VOACAPW\CISI.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\CISI.FOR)
+00410100    CNGTIM                                   c:\itshfbc\win32\VOACAPW\CNGTIM.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\CNGTIM.FOR)
+004102c0    CONVH                                    c:\itshfbc\win32\VOACAPW\CONVH.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\CONVH.FOR)
+004103b0    CURMUF                                   c:\itshfbc\win32\VOACAPW\CURMUF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\CURMUF.FOR)
+00410400    CURMUF_ORIG                              c:\itshfbc\win32\VOACAPW\CURMUF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\CURMUF.FOR)
+00411e80    CURMUF_ALEX                              c:\itshfbc\win32\VOACAPW\CURMUF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\CURMUF.FOR)
+00413920    DAZEL                                    c:\itshfbc\win32\VOACAPW\dazel.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\DAZEL.FOR)
+004145b0    DECRED                                   c:\itshfbc\win32\VOACAPW\decred.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\DECRED.FOR)
+00416ce0    DEL_ABT                                  c:\itshfbc\win32\VOACAPW\del_abt.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\DEL_ABT.FOR)
+00416e00    DISTXY                                   c:\itshfbc\win32\VOACAPW\distxy.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\DISTXY.FOR)
+00416f60    EF1VAR                                   c:\itshfbc\win32\VOACAPW\EF1VAR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\EF1VAR.FOR)
+00417190    ESIND                                    c:\itshfbc\win32\VOACAPW\ESIND.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ESIND.FOR)
+00417270    ESMOD                                    c:\itshfbc\win32\VOACAPW\ESMOD.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ESMOD.FOR)
+00417ca0    ESREG                                    c:\itshfbc\win32\VOACAPW\ESREG.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ESREG.FOR)
+00419560    F2DIS                                    c:\itshfbc\win32\VOACAPW\F2DIS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\F2DIS.FOR)
+00419720    F2VAR                                    c:\itshfbc\win32\VOACAPW\F2VAR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\F2VAR.FOR)
+00419b70    FDIST                                    c:\itshfbc\win32\VOACAPW\FDIST.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\FDIST.FOR)
+0041a2f0    FINDF                                    c:\itshfbc\win32\VOACAPW\FINDF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\FINDF.FOR)
+0041b220    FIXLIN                                   c:\itshfbc\win32\VOACAPW\FIXLIN.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\FIXLIN.FOR)
+0041b360    FLOLIN                                   c:\itshfbc\win32\VOACAPW\FLOLIN.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\FLOLIN.FOR)
+0041b4c0    FNORML                                   c:\itshfbc\win32\VOACAPW\FNORML.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\FNORML.FOR)
+0041b5d0    FOBBY                                    c:\itshfbc\win32\VOACAPW\FOBBY.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\FOBBY.FOR)
+0041b700    FRQCOM                                   c:\itshfbc\win32\VOACAPW\FRQCOM.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\FRQCOM.FOR)
+0041bba0    GAIN                                     c:\itshfbc\win32\VOACAPW\GAIN.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GAIN.FOR)
+0041c2c0    GENFAM                                   c:\itshfbc\win32\VOACAPW\GENFAM.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GENFAM.FOR)
+0041c510    GENION                                   c:\itshfbc\win32\VOACAPW\GENION.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GENION.FOR)
+0041cb80    GENOIS                                   c:\itshfbc\win32\VOACAPW\GENOIS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GENOIS.FOR)
+0041db30    GENOIS_OLD                               c:\itshfbc\win32\VOACAPW\GENOIS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GENOIS.FOR)
+0041e6e0    GEOM                                     c:\itshfbc\win32\VOACAPW\GEOM.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GEOM.FOR)
+0041f0a0    GEOTIM                                   c:\itshfbc\win32\VOACAPW\GEOTIM.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GEOTIM.FOR)
+0041f270    GETHP                                    c:\itshfbc\win32\VOACAPW\GETHP.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GETHP.FOR)
+0041f770    GETKMF                                   c:\itshfbc\win32\VOACAPW\GETKMF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GETKMF.FOR)
+0041f790    GETTOP                                   c:\itshfbc\win32\VOACAPW\GETTOP.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GETTOP.FOR)
+0041f980    GMLOSS                                   c:\itshfbc\win32\VOACAPW\GMLOSS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GMLOSS.FOR)
+0041fb90    GPHBOD                                   c:\itshfbc\win32\VOACAPW\GPHBOD.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GPHBOD.FOR)
+00421410    GRIDXY                                   c:\itshfbc\win32\VOACAPW\gridxy.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GRIDXY.FOR)
+004215c0    HFAREA                                   c:\itshfbc\win32\VOACAPW\hfarea.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\HFAREA.FOR)
+00422010    ROUNDIT                                  c:\itshfbc\win32\VOACAPW\hfarea.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\HFAREA.FOR)
+00422080    HFCIRAF                                  c:\itshfbc\win32\VOACAPW\hfciraf.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\HFCIRAF.FOR)
+004226c0    OUTCIRAF                                 c:\itshfbc\win32\VOACAPW\outciraf.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTCIRAF.FOR)
+00423d70    HFMUFS                                   c:\itshfbc\win32\VOACAPW\HFMUFS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\HFMUFS.FOR)
+00424a90    HFMUFS2                                  c:\itshfbc\win32\VOACAPW\HFMUFS2.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\HFMUFS2.FOR)
+004254d0    INMUF                                    c:\itshfbc\win32\VOACAPW\INMUF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\INMUF.FOR)
+004268b0    IONPLT                                   c:\itshfbc\win32\VOACAPW\IONPLT.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\IONPLT.FOR)
+00427770    IONSET                                   c:\itshfbc\win32\VOACAPW\IONSET.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\IONSET.FOR)
+00427ad0    LECDEN                                   c:\itshfbc\win32\VOACAPW\LECDEN.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\LECDEN.FOR)
+00428650    LISTIN                                   c:\itshfbc\win32\VOACAPW\listin.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\LISTIN.FOR)
+00429110    LNGPAT                                   c:\itshfbc\win32\VOACAPW\LNGPAT.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\LNGPAT.FOR)
+00429ed0    LUFFY                                    c:\itshfbc\win32\VOACAPW\LUFFY.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\LUFFY.FOR)
+0042b880    MAGFIN                                   c:\itshfbc\win32\VOACAPW\MAGFIN.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\MAGFIN.FOR)
+0042bca0    MAGVAR                                   c:\itshfbc\win32\VOACAPW\MAGVAR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\MAGVAR.FOR)
+0042bdc0    MONITR                                   c:\itshfbc\win32\VOACAPW\monitr.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\MONITR.FOR)
+0042bed0    MPATH                                    c:\itshfbc\win32\VOACAPW\MPATH.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\MPATH.FOR)
+0042c040    NOISY                                    c:\itshfbc\win32\VOACAPW\NOISY.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\NOISY.FOR)
+0042c2e0    NOMMUF                                   c:\itshfbc\win32\VOACAPW\NOMMUF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\NOMMUF.FOR)
+0042c6e0    OUTALL                                   c:\itshfbc\win32\VOACAPW\OUTALL.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTALL.FOR)
+0042f3f0    OUTANT                                   c:\itshfbc\win32\VOACAPW\OUTANT.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTANT.FOR)
+0042fb00    OUTAREA                                  c:\itshfbc\win32\VOACAPW\outarea.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTAREA.FOR)
+00431360    PROGRESS_LABEL                           c:\itshfbc\win32\VOACAPW\outarea.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTAREA.FOR)
+004313c0    OUTBOD                                   c:\itshfbc\win32\VOACAPW\OUTBOD.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTBOD.FOR)
+00431940    OUTBOD2                                  c:\itshfbc\win32\VOACAPW\OUTBOD.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTBOD.FOR)
+00432320    OUTBOD3                                  c:\itshfbc\win32\VOACAPW\OUTBOD.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTBOD.FOR)
+00432740    OUTBOD4                                  c:\itshfbc\win32\VOACAPW\OUTBOD.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTBOD.FOR)
+00432af0    OUTGPH                                   c:\itshfbc\win32\VOACAPW\OUTGPH.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTGPH.FOR)
+00432b30    OUTION                                   c:\itshfbc\win32\VOACAPW\OUTION.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTION.FOR)
+00432ba0    OUTLAY                                   c:\itshfbc\win32\VOACAPW\OUTLAY.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTLAY.FOR)
+00432ea0    OUTLIN                                   c:\itshfbc\win32\VOACAPW\OUTLIN.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTLIN.FOR)
+00432f70    OUTMUF                                   c:\itshfbc\win32\VOACAPW\OUTMUF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTMUF.FOR)
+00433410    OUTPAR                                   c:\itshfbc\win32\VOACAPW\OUTPAR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTPAR.FOR)
+00433900    OUT_SI                                   c:\itshfbc\win32\VOACAPW\OUT_si.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUT_SI.FOR)
+00433d00    OUTTAB                                   c:\itshfbc\win32\VOACAPW\OUTTAB.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTTAB.FOR)
+00433d70    OUTTOP                                   c:\itshfbc\win32\VOACAPW\OUTTOP.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTTOP.FOR)
+00434920    PEN                                      c:\itshfbc\win32\VOACAPW\PEN.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\PEN.FOR)
+004349c0    PENANG                                   c:\itshfbc\win32\VOACAPW\PENANG.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\PENANG.FOR)
+00434e70    PRBMUF                                   c:\itshfbc\win32\VOACAPW\PRBMUF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\PRBMUF.FOR)
+00435020    PWRDB                                    c:\itshfbc\win32\VOACAPW\pwrdb.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\PWRDB.FOR)
+004350f0    RDCIRAF                                  c:\itshfbc\win32\VOACAPW\rdCIRAF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\RDCIRAF.FOR)
+00435640    REDMAP                                   c:\itshfbc\win32\VOACAPW\REDMAP.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\REDMAP.FOR)
+00436180    REDAILY                                  c:\itshfbc\win32\VOACAPW\REDAILY.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\REDAILY.FOR)
+004365c0    REGMOD                                   c:\itshfbc\win32\VOACAPW\REGMOD.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\REGMOD.FOR)
+004379a0    RELBIL                                   c:\itshfbc\win32\VOACAPW\RELBIL.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\RELBIL.FOR)
+00438580    RUNFREQS                                 c:\itshfbc\win32\VOACAPW\runfreqs.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\RUNFREQS.FOR)
+00438680    SANG                                     c:\itshfbc\win32\VOACAPW\SANG.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SANG.FOR)
+00438770    SELMOD                                   c:\itshfbc\win32\VOACAPW\SELMOD.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SELMOD.FOR)
+00438870    SELTXR                                   c:\itshfbc\win32\VOACAPW\SELTXR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SELTXR.FOR)
+004388c0    SELTXR_ORIG                              c:\itshfbc\win32\VOACAPW\SELTXR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SELTXR.FOR)
+00438f10    SELTXR_ALEX                              c:\itshfbc\win32\VOACAPW\SELTXR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SELTXR.FOR)
+00439430    SERPRB                                   c:\itshfbc\win32\VOACAPW\SERPRB.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SERPRB.FOR)
+00439700    SETGPH                                   c:\itshfbc\win32\VOACAPW\SETGPH.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SETGPH.FOR)
+00439ac0    SETLNG                                   c:\itshfbc\win32\VOACAPW\SETLNG.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SETLNG.FOR)
+00439f00    SETLUF                                   c:\itshfbc\win32\VOACAPW\SETLUF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SETLUF.FOR)
+0043a020    SETOUT                                   c:\itshfbc\win32\VOACAPW\SETOUT.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SETOUT.FOR)
+0043a510    SETTXR                                   c:\itshfbc\win32\VOACAPW\SETTXR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SETTXR.FOR)
+0043a560    SETTXR_ORIG                              c:\itshfbc\win32\VOACAPW\SETTXR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SETTXR.FOR)
+0043b270    SETTXR_ALEX                              c:\itshfbc\win32\VOACAPW\SETTXR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SETTXR.FOR)
+0043bfb0    SIGDIS                                   c:\itshfbc\win32\VOACAPW\SIGDIS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SIGDIS.FOR)
+0043c000    SIGDIS_ORIG                              c:\itshfbc\win32\VOACAPW\SIGDIS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SIGDIS.FOR)
+0043c8a0    SIGDIS_ALEX                              c:\itshfbc\win32\VOACAPW\SIGDIS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SIGDIS.FOR)
+0043d150    SQUEEZ                                   c:\itshfbc\win32\VOACAPW\squeez.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SQUEEZ.FOR)
+0043d280    SYSSY                                    c:\itshfbc\win32\VOACAPW\SYSSY.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SYSSY.FOR)
+0043d550    TABBOD                                   c:\itshfbc\win32\VOACAPW\TABBOD.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\TABBOD.FOR)
+0043dc00    TABS                                     c:\itshfbc\win32\VOACAPW\TABS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\TABS.FOR)
+0043dd60    TIMVAR                                   c:\itshfbc\win32\VOACAPW\TIMVAR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\TIMVAR.FOR)
+0043e000    TXPWR                                    c:\itshfbc\win32\VOACAPW\txpwr.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\TXPWR.FOR)
+0043e320    VERSY                                    c:\itshfbc\win32\VOACAPW\VERSY.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VERSY.FOR)
+0043e7e0    VIRTIM                                   c:\itshfbc\win32\VOACAPW\VIRTIM.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VIRTIM.FOR)
+0043e970    XLIMIT6                                  c:\itshfbc\win32\VOACAPW\xlimit6.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\XLIMIT6.FOR)
+0043e9e0    XLIN                                     c:\itshfbc\win32\VOACAPW\xlin.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\XLIN.FOR)
+0043ebd0    ZONES_TO_TP                              c:\itshfbc\win32\VOACAPW\zones.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ZONES.FOR)
+0043ee60    PARSE_ZONES                              c:\itshfbc\win32\VOACAPW\zones.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ZONES.FOR)
+0043ef30    PZONES                                   c:\itshfbc\win32\VOACAPW\zones.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ZONES.FOR)
+0043f3a0    MUFESGAN                                 c:\lib32\hfmufesw.lib (/290           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\MUFESGAN.OBJ)
+00448f00    MUFESINT                                 c:\lib32\hfmufesw.lib (/251           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\MUFESINT.OBJ)
+00449270    CMPINV                                   c:\lib32\hfmufesw.lib (/470           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\CMPINV.OBJ)
+00449700    COLL                                     c:\lib32\hfmufesw.lib (/435           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\COLL.OBJ)
+00449e80    CSZ1                                     c:\lib32\hfmufesw.lib (/400           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\CSZ1.OBJ)
+0044a2d0    CANG                                     c:\lib32\hfmufesw.lib (/507           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\CANG.OBJ)
+0044a3d0    MUTUAL                                   c:\lib32\hfmufesw.lib (/214           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\MUTUAL.OBJ)
+0044a480    ECH                                      c:\lib32\hfmufesw.lib (/366           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\ECH.OBJ)
+0044aea0    SIM                                      c:\lib32\hfmufesw.lib (/72            )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\SIM.OBJ)
+0044b490    ONEJ                                     c:\lib32\hfmufesw.lib (/179           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\ONEJ.OBJ)
+0044b640    ZMUT                                     c:\lib32\hfmufesw.lib (/0             )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\ZMUT.OBJ)
+0044b9d0    MATINV                                   c:\lib32\hfmufesw.lib (/329           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\MATINV.OBJ)
+0044bea0    SQMULT                                   c:\lib32\hfmufesw.lib (/35            )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\SQMULT.OBJ)
+0044c000    RESIST                                   c:\lib32\hfmufesw.lib (/106           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\RESIST.OBJ)
+0044c160    REACT                                    c:\lib32\hfmufesw.lib (/143           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\REACT.OBJ)
+0044c2c0    AGAUSS                                   c:\lib32\hfmufesw.lib (/542           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\AGAUSS.OBJ)
+0044c490    DAZEL0                                   c:\lib32\wp10dwin.lib (/951           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\DAZEL0.OBJ)
+0044cb60    ANTINIT2                                 c:\lib32\wp10dwin.lib (/1287          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\ANTINIT2.OBJ)
+0044d3e0    ANTMODEL                                 c:\lib32\wp10dwin.lib (/1248          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\ANTMODEL.OBJ)
+0044d6e0    IONGAIN                                  c:\lib32\wp10dwin.lib (/419           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\IONGAIN.OBJ)
+0044d7b0    IONGAIN2                                 c:\lib32\wp10dwin.lib (/419           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\IONGAIN.OBJ)
+0044ffa0    IONINIT                                  c:\lib32\wp10dwin.lib (/381           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\IONINIT.OBJ)
+004501d0    READANT                                  c:\lib32\wp10dwin.lib (/151           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\READANT.OBJ)
+00450ee0    INVCON                                   c:\lib32\wp10dwin.lib (/457           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\INVCON.OBJ)
+00451070    ANTCAL                                   c:\lib32\wp10dwin.lib (/1402          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\ANTCAL.OBJ)
+00451360    ANTFILE                                  c:\lib32\wp10dwin.lib (/1364          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\ANTFILE.OBJ)
+00451420    SETMAXGAIN                               c:\lib32\wp10dwin.lib (/75            )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\SETMAXGA.OBJ)
+004515a0    GAINORM                                  c:\lib32\wp10dwin.lib (/765           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\GAINORM.OBJ)
+00451870    LOGPARM                                  c:\lib32\wp10dwin.lib (/304           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\LOGPARM.OBJ)
+004522f0    TRIGFUN                                  c:\lib32\wp10dwin.lib (/0             )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\TRIGFUN.OBJ)
+004523f0    PARMPREC                                 c:\lib32\wp10dwin.lib (/227           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\PARMPREC.OBJ)
+00453740    CURTAIN                                  c:\lib32\wp10dwin.lib (/988           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\CURTAIN.OBJ)
+00453b60    CCIRGAIN                                 c:\lib32\wp10dwin.lib (/1136          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\CCIRGAIN.OBJ)
+00453d10    GAINTERB                                 c:\lib32\wp10dwin.lib (/688           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\GAINTERB.OBJ)
+00453d80    GAINTERP                                 c:\lib32\wp10dwin.lib (/649           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\GAINTERP.OBJ)
+00453e60    GAINTERP1                                c:\lib32\wp10dwin.lib (/649           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\GAINTERP.OBJ)
+00453f00    AZMAX                                    c:\lib32\wp10dwin.lib (/1212          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\AZMAX.OBJ)
+00454090    GAINREL                                  c:\lib32\wp10dwin.lib (/727           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\GAINREL.OBJ)
+00455fd0    CURCAL                                   c:\lib32\wp10dwin.lib (/1064          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\CURCAL.OBJ)
+00456290    BESSEL                                   c:\lib32\wp10dwin.lib (/1175          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\BESSEL.OBJ)
+004564e0    SURFIM                                   c:\lib32\wp10dwin.lib (/38            )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\SURFIM.OBJ)
+00456610    REFCOF                                   c:\lib32\wp10dwin.lib (/114           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\REFCOF.OBJ)
+00456750    PATTRN0                                  c:\lib32\wp10dwin.lib (/189           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\PATTRN0.OBJ)
+00456970    PARABOL                                  c:\lib32\wp10dwin.lib (/266           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\PARABOL.OBJ)
+00456a70    F2                                       c:\lib32\wp10dwin.lib (/842           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\F2.OBJ)
+00456c30    DBLTRAP                                  c:\lib32\wp10dwin.lib (/913           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\DBLTRAP.OBJ)
+00456d90    LENCHAR                                  c:\lib32\voa_lib.lib (/255           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\LENCHAR.OBJ)
+00456e00    SET_RUN                                  c:\lib32\voa_lib.lib (/145           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\SET_RUN.OBJ)
+00456f80    GET_RUN                                  c:\lib32\voa_lib.lib (/145           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\SET_RUN.OBJ)
+00457120    LCOUNT                                   c:\lib32\voa_lib.lib (/292           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\LCOUNT.OBJ)
+00457180    GH_EXEC                                  c:\lib32\voa_lib.lib (/438           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\GH_EXEC.OBJ)
+00457370    IT_EXIST                                 c:\lib32\voa_lib.lib (/363           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\IT_EXIST.OBJ)
+004573c0    LCASE                                    c:\lib32\voa_lib.lib (/328           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\LCASE.OBJ)
+00457430    UCASE                                    c:\lib32\voa_lib.lib (/74            )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\UCASE.OBJ)
+004574a0    YIELDIT                                  c:\lib32\voa_lib.lib (/0             )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\YIELDIT.OBJ)
+004574d0    SUFFIX                                   c:\lib32\voa_lib.lib (/109           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\SUFFIX.OBJ)
+00457580    DOSCOLR                                  c:\lib32\voa_lib.lib (/475           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\DOSCOLR.OBJ)
+004577c0    WINCOLR                                  c:\lib32\voa_lib.lib (/37            )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\WINCOLR.OBJ)
+00457c50    RBLANKC                                  c:\lib32\voa_lib.lib (/182           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\RBLANKC.OBJ)
+00457d00    CHARDEG                                  c:\lib32\voa_lib.lib (/622           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\CHARDEG.OBJ)
+00458080    ICOLDOS                                  c:\lib32\voa_lib.lib (/401           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\ICOLDOS.OBJ)
+00458120    COL_DOS                                  c:\lib32\voa_lib.lib (/585           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\COL_DOS.OBJ)
+004581d0    DEG2CHR                                  c:\lib32\voa_lib.lib (/512           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\DEG2CHR.OBJ)
+00458440    DAZEL1                                   c:\lib32\voa_lib.lib (/549           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\DAZEL1.OBJ)
+004589b0    PWRCUT                                   c:\lib32\voa_lib.lib (/219           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\PWRCUT.OBJ)
+00458b00    DAYINTERP                                c:\lib32\voa_lib.lib (/219           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\PWRCUT.OBJ)
+00458bb0    SALFStartup                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+00458bba    SALFStart                                C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+004592d0    __undefined_function                     C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004592e0    __set_default_window                     C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004592f0    I4#WSF                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459300    CMNAM                                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459310    OPEN##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459320    __create_window                          C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459330    PERMIT_UNDERFLOW#                        C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459340    STOP#                                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459350    XXRJ##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459360    __adjust_stack_f                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459370    CH#WSF                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459380    MAKE_CSTRING#                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459390    UNDERFLOW_COUNT#                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004593a0    CH#RSF                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004593b0    WINDOW_UPDATE#                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004593c0    R4#WSF                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004593d0    SECONDS_SINCE_1980#                      C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004593e0    ERASE#                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004593f0    WSF1##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459400    WSF2#                                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459410    __FTN95INIT1_                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459420    RWIN##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459430    FEXISTS#                                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459440    __CCOPY                                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459450    __CONCAT                                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459460    WINDOW_PRINTF##                          C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459470    CLOS##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459480    __destroy_window                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459490    RSF1##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004594a0    DOS_ERROR_MESSAGE#                       C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004594b0    EXIT1#                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004594c0    R4#RSF                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004594d0    RDU1##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004594e0    XSUX#                                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004594f0    I4#RSF                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459500    EXP#X                                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459510    XXRR##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459520    D8#WSF                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459530    D8#RSF                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459540    ALOG#X                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459550    AL10#X                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459560    ASIN#X                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459570    DTN2#X                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459580    PAUSE#                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459590    CCOMP#                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004595a0    ACOS#X                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004595b0    SOU#                                     C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004595c0    COUA#                                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004595d0    SOUA#                                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004595e0    WDU1##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004595f0    WDU2#                                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459600    RSU1##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459610    INDEX9#                                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459620    XXCJ#                                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459630    XXJJ##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459640    CSQRT#                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459650    CDIV##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459660    CMPY##                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459670    ATTACH#                                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459680    CURDIR#                                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459690    CHAR_FILL#                               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004596a0    GET_CSTRING#                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004596b0    __yield_program_control                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004596c0    GetModuleFileNameA                       C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004596d0    __stdin_address                          C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004596e0    __Register_map_info                      C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004596f0    __stdout_address                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459700    __stderr_address                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459710    strlwr                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459720    __cout_address                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459730    _scc_lib_version                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459740    __cin_address                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459750    __cerr_address                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459760    ____console_stdin_address                C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459770    ____console_stdout_address               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459780    ____console_stderr_address               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459790    GetVersion                               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004597a0    GetModuleHandleA                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004597b0    __ctype_ptr_address                      C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004597c0    __initialise_sccdll                      C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004597d0    __vd_info_address                        C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004597e0    mprintf0                                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004597f0    __special_flags_address                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459800    __General_shared_address                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459810    __WindowsType_address                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459820    __init_WindowsType                       C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459830    strcat                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459840    LibMain                                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459850    __initialise_cpplib                      C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459860    __errno_address                          C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459870    exit                                     C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459880    __salf_exception_handler                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459890    WinMain                                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004598a0    strerror                                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004598b0    __get_virtual_common_block               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004598c0    __Put_exception_title                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004598d0    GetLastError                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004598e0    GetWindow                                C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004598f0    __init_cpplib_info                       C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459900    LIBMAIN#                                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459910    __get_main_arguments                     C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459920    sprintf                                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459930    __Put_exception_message                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+00459940    GetSystemMetrics                         C:\WINDOWS\system32\user32.dll
+00459950    CreateProcessA                           C:\WINDOWS\system32\kernel32.dll
+00459960    GetExitCodeProcess                       C:\WINDOWS\system32\kernel32.dll
+
+Uninitialised Data
+
+0045a000    __errno                                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a004    __special_flags                          C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a008    __Windows_Mode                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a00c    __dll_mb_cur_max                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a010    __vd_info                                C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a014    __ctype_ptr                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a018    __WindowsType                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a01c    __ptr_DLL_Shared_Region                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a020    ____console_stderr                       C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a024    __STDCALL_FUNCTION_TABLE                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a028    ____console_stdout                       C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a02c    ____console_stdin                        C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a030    __cerr                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a034    __cin                                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a038    __cout                                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a03c    __stderr                                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a040    __stdout                                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a044    __throw_pointer                          C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a048    __stdin                                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+0045a04c    CHARRIS_                                 c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+0045a054    CLISTING_                                c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+0045a05c    CVERSN_                                  c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+0045a064    TWO_                                     c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+0045fbdc    CRUN_DIRECTORY_                          c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+0045fc14    ONE_                                     c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+004625e4    CCIRAF_TP_                               c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+00463424    CAREACH_                                 c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+0046342c    CPROGRESS_                               c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+00463484    C_S_TO_I_                                c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+0046348c    CDISTANCE_                               c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+0046349c    CQUIET_                                  c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+004634a4    CCANCEL_BATCH_                           c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+004634ac    CMODEL_                                  c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+004634b4    CTIME_                                   c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+004634bc    CROUND_                                  c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+004634c4    CNORTH_POLE_                             c:\itshfbc\win32\VOACAPW\voacapw.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAPW.FOR)
+004634cc    CANTENNA_                                c:\itshfbc\win32\VOACAPW\setvars.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SETVARS.FOR)
+0049f344    ZON_                                     c:\itshfbc\win32\VOACAPW\setvars.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\SETVARS.FOR)
+0049f5cc    CCIRPARM_                                c:\itshfbc\win32\VOACAPW\antcalc.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ANTCALC.FOR)
+0049f6d4    DESIGNFREQ_                              c:\itshfbc\win32\VOACAPW\antcalc.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ANTCALC.FOR)
+0049f6dc    CAREAANT_                                c:\itshfbc\win32\VOACAPW\antcalc.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ANTCALC.FOR)
+004bf6bc    ZANTENNA_                                c:\itshfbc\win32\VOACAPW\areamap.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\AREAMAP.FOR)
+004bfa4c    MUFS_                                    c:\itshfbc\win32\VOACAPW\ALOSFV.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ALOSFV.FOR)
+004bfe64    SIGD_                                    c:\itshfbc\win32\VOACAPW\BABS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BABS.FOR)
+004bfea4    FIELDSA_                                 c:\itshfbc\win32\VOACAPW\batch.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BATCH.FOR)
+004bff74    FIELDS_                                  c:\itshfbc\win32\VOACAPW\batch.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BATCH.FOR)
+004c0164    CARD_DECK_                               c:\itshfbc\win32\VOACAPW\batch_S.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BATCH_S.FOR)
+004c110c    CANTENNA_DECK_                           c:\itshfbc\win32\VOACAPW\batch_S.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BATCH_S.FOR)
+004c17f4    CTOPLINES_                               c:\itshfbc\win32\VOACAPW\voacap.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAP.FOR)
+004c1814    CBOTLINES_                               c:\itshfbc\win32\VOACAPW\voacap.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VOACAP.FOR)
+004c1854    FIELD_SSN_                               c:\itshfbc\win32\VOACAPW\read_asc.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\READ_ASC.FOR)
+004c18fc    ZMETHOD_                                 c:\itshfbc\win32\VOACAPW\read_asc.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\READ_ASC.FOR)
+004c1904    AZEL_                                    c:\itshfbc\win32\VOACAPW\dazel.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\DAZEL.FOR)
+004c193c    CDAILY_                                  c:\itshfbc\win32\VOACAPW\decred.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\DECRED.FOR)
+004c196c    CHOURS_                                  c:\itshfbc\win32\VOACAPW\decred.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\DECRED.FOR)
+004c19d4    CAREA_                                   c:\itshfbc\win32\VOACAPW\decred.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\DECRED.FOR)
+004c19dc    RGRID_                                   c:\itshfbc\win32\VOACAPW\decred.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\DECRED.FOR)
+004c1a04    PANTENNA_                                c:\itshfbc\win32\VOACAPW\decred.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\DECRED.FOR)
+004c1aa4    FONE_                                    c:\itshfbc\win32\VOACAPW\EF1VAR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\EF1VAR.FOR)
+004c1acc    A11_                                     c:\itshfbc\win32\VOACAPW\EF1VAR.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\EF1VAR.FOR)
+004c1ae4    REFLX_                                   c:\itshfbc\win32\VOACAPW\ESREG.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\ESREG.FOR)
+004c2e74    MODES_                                   c:\itshfbc\win32\VOACAPW\FDIST.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\FDIST.FOR)
+004c302c    LOSX_                                    c:\itshfbc\win32\VOACAPW\FINDF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\FINDF.FOR)
+004c3fb4    C_NOISE_                                 c:\itshfbc\win32\VOACAPW\GENOIS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GENOIS.FOR)
+004c3fc4    C_NOISES_                                c:\itshfbc\win32\VOACAPW\GENOIS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GENOIS.FOR)
+004c3fd4    C_METHOD_USED_                           c:\itshfbc\win32\VOACAPW\GENOIS.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\GENOIS.FOR)
+004c3fdc    CDAY_                                    c:\itshfbc\win32\VOACAPW\hfarea.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\HFAREA.FOR)
+004c3fe4    CCIRAF_                                  c:\itshfbc\win32\VOACAPW\hfciraf.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\HFCIRAF.FOR)
+004c6a9c    SON_                                     c:\itshfbc\win32\VOACAPW\outciraf.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTCIRAF.FOR)
+004c6ebc    SNCOM_                                   c:\itshfbc\win32\VOACAPW\outciraf.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTCIRAF.FOR)
+004c6ef4    CGAINS_                                  c:\itshfbc\win32\VOACAPW\outciraf.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTCIRAF.FOR)
+004c6f5c    DUDL_NOIS_                               c:\itshfbc\win32\VOACAPW\outciraf.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\OUTCIRAF.FOR)
+004c6fc4    CNFREQS_                                 c:\itshfbc\win32\VOACAPW\HFMUFS2.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\HFMUFS2.FOR)
+004c6fcc    GH_IPFG_                                 c:\itshfbc\win32\VOACAPW\LUFFY.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\LUFFY.FOR)
+004c6fd4    CCIRAF_MAX_                              c:\itshfbc\win32\VOACAPW\rdCIRAF.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\RDCIRAF.FOR)
+004c7a74    TWO_AB_                                  c:\itshfbc\win32\VOACAPW\VERSY.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\VERSY.FOR)
+004c7f6c    MUT_                                     c:\lib32\hfmufesw.lib (/290           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\MUFESGAN.OBJ)
+004c7f94    CUR_                                     c:\lib32\hfmufesw.lib (/290           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\MUFESGAN.OBJ)
+004c7fa4    HFMUFES_ONE_                             c:\lib32\hfmufesw.lib (/290           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\MUFESGAN.OBJ)
+004c80ec    PON_                                     c:\lib32\hfmufesw.lib (/470           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\CMPINV.OBJ)
+004c822c    SURF_                                    c:\lib32\wp10dwin.lib (/1287          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\ANTINIT2.OBJ)
+004c8244    TRIG_                                    c:\lib32\wp10dwin.lib (/1287          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\ANTINIT2.OBJ)
+004c8d94    FLOORC_                                  c:\lib32\wp10dwin.lib (/1287          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\ANTINIT2.OBJ)
+004c8d9c    CROS_                                    c:\lib32\wp10dwin.lib (/1287          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\ANTINIT2.OBJ)
+004c8dcc    GENERAL_                                 c:\lib32\wp10dwin.lib (/1287          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\ANTINIT2.OBJ)
+004c8dec    CCPARM_                                  c:\lib32\wp10dwin.lib (/1287          )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\ANTINIT2.OBJ)
+004c8dfc    CTYPE11G_                                c:\lib32\wp10dwin.lib (/151           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\READANT.OBJ)
+004c8f6c    GAIN_10_                                 c:\lib32\wp10dwin.lib (/151           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\READANT.OBJ)
+004cb834    LOGP_                                    c:\lib32\wp10dwin.lib (/304           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\LOGPARM.OBJ)
+004cbbf4    WARR_                                    c:\lib32\wp10dwin.lib (/227           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\PARMPREC.OBJ)
+004cc47c    WWAR_                                    c:\lib32\wp10dwin.lib (/227           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\PARMPREC.OBJ)
+004d74cc    ANTDAT_                                  c:\lib32\wp10dwin.lib (/988           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\CURTAIN.OBJ)
+004d754c    FWAVE_                                   c:\lib32\wp10dwin.lib (/189           )
+                                                        (C:\ITSHFBC\WIN32\WP10DWIN\PATTRN0.OBJ)
+004d7674    DOS_COL_                                 c:\lib32\voa_lib.lib (/475           )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\DOSCOLR.OBJ)
+004d77bc    WIN_COL_                                 c:\lib32\voa_lib.lib (/37            )
+                                                        (C:\ITSHFBC\WIN32\VOA_LIB\WINCOLR.OBJ)
+
+Initialised Data
+
+004db8f0    CCOEFF_                                  c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004db8f8    INFORM_                                  c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004db908    DATR_                                    c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004db9b8    METSET_                                  c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004dbb00    CON_                                     c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004dbb28    RAYS_                                    c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e1990    ALPHA_                                   c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e1a30    NAMEX_                                   c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e1e70    OUTLAB_                                  c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e1ec8    OUTFMT_                                  c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e1f68    PSCA_                                    c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e1f90    SSP_                                     c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e1ff8    LPATH_                                   c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e2178    TON_                                     c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e21b0    ANOIS_                                   c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e21e0    ION_                                     c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e2200    DON_                                     c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e2290    CONTRL_                                  c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e2388    TIME_                                    c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e2460    OUTPRT_                                  c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e2598    FRQ_                                     c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e2650    ALLMODE_                                 c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e2d88    MFAC_                                    c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e2de8    RON_                                     c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e3d08    OUTGH_                                   c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e3e60    GEOG_                                    c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e3f00    ES_                                      c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004e3f50    FILES_                                   c:\itshfbc\win32\VOACAPW\blkdat.obj
+                                                        (C:\ITSHFBC\WIN32\VOACAPW\BLKDAT.FOR)
+004ebc34    WAITS_                                   c:\lib32\hfmufesw.lib (/290           )
+                                                        (C:\ITSHFBC\WIN32\HFMUFESW\MUFESGAN.OBJ)
+004ed618    __CONTROL_WORD                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+004ed630    __virallocmes                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+004ed670    __modulename                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+004ed6d4    __DLL_thread_already_attached            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/0             )
+                                                        (\cpplib\nt_dll\salfstar.obj)
+004ee000    salflibc_IMPORT_DESCRIPTOR               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee03c    NULL_IMPORT_DESCRIPTOR                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee20c    _imp____SALFORD_MAP                      C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee210    __throw_temporary_ptr                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee210    _imp____throw_temporary_ptr              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee214    _imp____undefined_function               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee218    _imp____set_default_window               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee21c    _imp__I4#WSF                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee220    _imp__CMNAM                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee224    _imp__OPEN##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee228    _imp____create_window                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee22c    _imp__PERMIT_UNDERFLOW#                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee230    _imp__STOP#                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee234    _imp__XXRJ##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee238    _imp____adjust_stack_f                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee23c    _imp__CH#WSF                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee240    _imp__MAKE_CSTRING#                      C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee244    _imp__UNDERFLOW_COUNT#                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee248    _imp__CH#RSF                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee24c    _imp__WINDOW_UPDATE#                     C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee250    _imp__R4#WSF                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee254    _imp__SECONDS_SINCE_1980#                C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee258    _imp__ERASE#                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee25c    _imp__WSF1##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee260    _imp__WSF2#                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee264    _imp____FTN95INIT1_                      C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee268    _imp__RWIN##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee26c    _imp__FEXISTS#                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee270    _imp____CCOPY                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee274    _imp____CONCAT                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee278    _imp__WINDOW_PRINTF##                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee27c    _imp__CLOS##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee280    _imp____destroy_window                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee284    _imp__RSF1##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee288    _imp__DOS_ERROR_MESSAGE#                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee28c    _imp__EXIT1#                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee290    _imp__R4#RSF                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee294    _imp__RDU1##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee298    _imp__XSUX#                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee29c    _imp__I4#RSF                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2a0    _imp__EXP#X                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2a4    _imp__XXRR##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2a8    _imp__D8#WSF                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2ac    _imp__D8#RSF                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2b0    _imp__ALOG#X                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2b4    _imp__AL10#X                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2b8    _imp__ASIN#X                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2bc    _imp__DTN2#X                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2c0    _imp__PAUSE#                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2c4    _imp__CCOMP#                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2c8    _imp__ACOS#X                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2cc    _imp__SOU#                               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2d0    _imp__COUA#                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2d4    _imp__SOUA#                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2d8    _imp__WDU1##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2dc    _imp__WDU2#                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2e0    _imp__RSU1##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2e4    _imp__INDEX9#                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2e8    _imp__XXCJ#                              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2ec    _imp__XXJJ##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2f0    _imp__CSQRT#                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2f4    _imp__CDIV##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2f8    _imp__CMPY##                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee2fc    _imp__ATTACH#                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee300    _imp__CURDIR#                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee304    _imp__CHAR_FILL#                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee308    _imp__GET_CSTRING#                       C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee30c    _imp____yield_program_control            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee310    _imp__GetModuleFileNameA                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee314    _imp____stdin_address                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee318    _imp____Register_map_info                C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee31c    _imp____stdout_address                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee320    _imp____stderr_address                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee324    _imp__strlwr                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee328    _imp____cout_address                     C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee32c    _imp___scc_lib_version                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee330    _imp____cin_address                      C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee334    _imp____cerr_address                     C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee338    _imp______console_stdin_address          C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee33c    _imp______console_stdout_address         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee340    _imp______console_stderr_address         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee344    _imp__GetVersion                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee348    _imp__GetModuleHandleA                   C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee34c    _imp____ctype_ptr_address                C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee350    _imp____initialise_sccdll                C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee354    _imp____vd_info_address                  C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee358    _imp__mprintf0                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee35c    _imp____special_flags_address            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee360    _imp____General_shared_address           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee364    _imp____WindowsType_address              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee368    _imp____init_WindowsType                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee36c    _imp__strcat                             C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee370    _imp__LibMain                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee374    _imp____initialise_cpplib                C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee378    _imp____errno_address                    C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee37c    _imp__exit                               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee380    _imp____salf_exception_handler           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee384    _imp__WinMain                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee388    _imp__strerror                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee38c    _imp____get_virtual_common_block         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee390    _imp____Put_exception_title              C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee394    _imp__GetLastError                       C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee398    _imp__GetWindow                          C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee39c    _imp____init_cpplib_info                 C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee3a0    _imp__LIBMAIN#                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee3a4    _imp____get_main_arguments               C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee3a8    _imp__sprintf                            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee3ac    _imp____Put_exception_message            C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee3b0    salflibc__imp__NULL                     C:\WIN32APP\SALFORD\FTN95\salflibc.lib (salflibc.dll/  )
+004ee3b8    USER32__imp__NULL                       C:\WINDOWS\system32\user32.dll
+004ee3c4    KERNEL32__imp__NULL                     C:\WINDOWS\system32\kernel32.dll
+004ef000    __PREAMBLE_START                         C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/28            )
+                                                        (\cpplib\nt_dll\preamble.obj)
+004ef008    __PREAMBLE_END                           C:\WIN32APP\SALFORD\FTN95\salflibc.lib (/28            )
+                                                        (\cpplib\nt_dll\preamble.obj)
+004f0000    __SALFORD_MAP                            Linker generated
+004f2000    __STACK_AND_HEAP_INFO                    Linker generated
+004f3010    __UNINITIALISED_COMMON_INFO              Linker generated
+004f4000  end                                     Linker defined
+
+
+Executable section map:
+
+Section   Base      Length    Flags   
+
+.text     00401000  00058970  60000020
+.bss      0045a000  0007da94  c0000080
+.comment  004d8000  00002c3a  00000a00
+.data     004db000  000127e0  c0000040
+.idata    004ee000  00000a5b  c0000040
+.CRT      004ef000  0000000c  c0000040
+.salfmap  004f0000  000016ae  40000040
+.salfsys  004f2000  00000018  c0000040
+.salfvc   004f3000  0000002c  c0000040
+.reloc    004f4000  00000000  42000040

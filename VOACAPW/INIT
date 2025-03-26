@@ -1,0 +1,4 @@
+c          *** initialize startup info structure ***
+      call char_fill@(startup,char(0))
+      cb=68
+      wShowWindow=SW_SHOW

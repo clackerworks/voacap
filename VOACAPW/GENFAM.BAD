@@ -1,0 +1,56 @@
+c###genfam.for
+      SUBROUTINE GENFAM(Y2,IBLK,FREQ,Z,FA,DU,DL,DMS,DUS,DLS)
+C--------------------------------
+C
+C     GENFAM CALCULATES THE FREQUENCY DEPENDENCE OF THE ATMOSPHERIC
+C     NOISE AND GETS DECILES AND PREDICTION ERRORS FROM TABLES
+C
+      COMMON / TWO / F2D(16,6,6), P(29,16,8), ABP(2,8), DUD(5,12,5),
+     A FAM(14,12), SYS(9,16,6), PERR(9,4,6), AB(318)
+      DIMENSION V(5)
+      IF(F2D(1,1,1) ) 90,90,95
+C.....NO IONOSPHERIC LONG TERM DATA BASE FILE (SET IN SUBROUTINE GENOIS)
+   90 FA = 0.0
+      DU=9.
+      DL=7.
+      DUS=1.5
+      DLS=1.5
+      DMS=3.
+      RETURN
+   95 CONTINUE
+      IBK=IBLK
+C.....CHECK IF LATITUDE IS NORTH OR SOUTH
+      IF (Y2)100, 105, 105
+  100 IBK = IBK + 6
+  105 U1 = - .75
+      X = .43429 * ALOG (FREQ)
+      U = (8. * 2. * * X - 11.) / 4.
+      KOP = 1
+  110 PZ = U1 * FAM (1, IBK) + FAM (2, IBK)
+      PX = U1 * FAM (8, IBK) + FAM (9, IBK)
+      DO 115 I = 3, 7
+      PZ = U1 * PZ + FAM (I, IBK)
+  115 PX = U1 * PX + FAM (I + 7, IBK)
+      IF(KOP-1) 120,120,125
+  120 CZ = Z * PZ + PX
+      CZ = Z + Z - CZ
+      U1 = U
+      KOP = 2
+      GO TO 110
+  125 FA = CZ * PZ + PX
+      DO 145 I = 1, 5
+      Y = DUD (1, IBK, I)
+      DO 140 J = 2, 5
+      IF (J - 5)140, 130, 140
+  130 IF (X - 1.)140, 140, 135
+  135 X = 1.
+  140 Y = Y * X + DUD (J, IBK, I)
+  145 V (I) = Y
+      DU = V (1)
+      DL = V (2)
+      DUS = V (3)
+      DLS = V (4)
+      DMS = V (5)
+      RETURN
+      END
+C--------------------------------

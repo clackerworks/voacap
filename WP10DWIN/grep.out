@@ -1,0 +1,7 @@
+antc.for:      common /ccirparm/ parm(20),z6,umax,vmax,giso,
+antcal.for:      common /ccirparm/ parm(20),z6,umax,vmax,giso,
+antinit2.for:c          in COMMON /CCIRPARM/
+antinit2.for:      common /ccirparm/ parm(20),z6,umax,vmax,giso,
+ccirgain.for:      common /ccirparm/ parm(20)
+readant.for:      common /ccirparm/ parm(20),z6,umax,vmax,giso,
+setmaxga.for:      common /ccirparm/ parm(20),z6,umax,vmax,giso,

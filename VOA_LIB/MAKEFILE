@@ -1,0 +1,21 @@
+
+voa_lib.lib: \
+	dazel1.obj \
+	deg2chr.obj \
+	DOScolr.obj icolDOS.obj col_DOS.obj \
+	WINcolr.obj \
+	chardeg.obj \
+	it_exist.obj \
+	lcount.obj \
+	lenchar.obj \
+	rblankc.obj \
+	set_run.obj \
+	suffix.obj \
+	lcase.obj ucase.obj \
+	pwrcut.obj \
+	gh_exec.obj \
+	yieldit.obj
+	del voa_lib.lib
+	slink -archive:voa_lib.lib -addobj:*.obj
+	del \lib32\voa_lib.lib
+	copy voa_lib.lib \lib32

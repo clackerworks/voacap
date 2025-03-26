@@ -1,0 +1,2 @@
+#!/bin/ape/sh
+for i in *.FOR; do mv $i $(basename $i .FOR).f; done
