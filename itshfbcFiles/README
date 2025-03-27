@@ -1,0 +1,11 @@
+To build the coefficients and copy the itshfbc files to your home
+directory type 'make' or 'make install'.
+
+This is a Linux version of the Windows itshfbc diectory structure, version 080410.
+
+Support for user defined locations of the North Pole is included in this package.
+
+Please let me know if you have any problems.  
+
+J.Watson (M0DNS/HZ1JW)
+
