@@ -29,8 +29,8 @@ c*********************************************************************
       call DOScolr                      !  read color table
       call WINcolr                      !  read Windows color table
 
-      data_dir='AREADATA\'
-      if(area.eq.'I') data_dir='AREA_INV\'
+      data_dir='AREADATA/'
+      if(area.eq.'I') data_dir='AREA_INV/'
 
       nch_run=lcount(run_directory,50)
 ccc      write(*,'(''OPENing:'',a)') 
@@ -144,11 +144,11 @@ c********************************************
       call yieldit                       !  yield for windows control
       write(sufix,'(3h.da,i1)') ii
       call suffix(fileout,12,sufix,4)    !  append suffix
-      call erase@(fileout,error_code)    !  delete file first
+C      call erase@(fileout,error_code)    !  delete file first
       grid_file(nchg:nchg)=sufix(4:4)
-      call erase@(grid_file,error_code)    !  delete *.vg? files
+C      call erase@(grid_file,error_code)    !  delete *.vg? files
       if(ii.gt.nmonths) go to 500
-      open(29,file=run_directory(1:nch_run)//'\'//fileout)
+      open(29,file=run_directory(1:nch_run)//'/'//fileout)
       rewind(29)
       write(29,1) model,filename
 1     format('COMMENT   ',a6,4x,a)
@@ -331,9 +331,9 @@ c           get frequencies from areafreq.dat
       save dir_bad,dir_good
       if(system_type.eq.'DOS ') then
          dir_bad='/'
-         dir_good='\'
+         dir_good='/'
       else
-         dir_bad='\'
+         dir_bad='/'
          dir_good='/'
       end if
       nch=21
@@ -345,7 +345,7 @@ c           get frequencies from areafreq.dat
       end
 * -------------------------------------------------------------------- *
       subroutine gettra(tlat,tlon,plat,plon)
-      INCLUDE 'FICEAREA.HDR'
+      INCLUDE 'FICEAREA.hdr'
       character cdeg*10
 
       cdeg=tlatdeg
@@ -410,7 +410,7 @@ c***********************************
          nchc=lcount(card,80)
          do 30 i=nchc,1,-1
          ich=card(i:i)
-         if(ich.eq.'/' .or. ich.eq.'\' .or. ich.eq.':') then
+         if(ich.eq.'/' .or. ich.eq.'/' .or. ich.eq.':') then
             cityname=card(i+1:nchc)
             go to 800
          end if

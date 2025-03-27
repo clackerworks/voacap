@@ -36,7 +36,7 @@ c           file on lu 22 and we want to call a routine to generate the
 c           GAINxx.DAT file.
 
 c           Prepare ANTTYPxx.DAT to communicate with ANTTYPxx.EXE:
-      open( 99, file=run_directory(1:nch_run)//'\'//dat,err=900)
+      open( 99, file=run_directory(1:nch_run)//'/'//dat,err=900)
       write( 99, 289 ) idx, antfile, fs,fe,beam_main,offazim
 289   format( i2, 28x,   '=antenna number (idx)' / 
      2       a21,  9x,  '=antenna file filename' /
@@ -49,9 +49,9 @@ c           Prepare ANTTYPxx.DAT to communicate with ANTTYPxx.EXE:
 c**********************************************************************
 c          Make sure ANTTYPxx.EXE exists before executing it.
 c**********************************************************************
-      iexe_exist=it_exist(run_directory(1:nch_run-3)//'bin_win\'//exe)
+C      iexe_exist=it_exist(run_directory(1:nch_run-3)//'bin_win/'//exe)
       if(iexe_exist.ne.1) then    !  antenna program does not exist
-         write(*,1) jant,run_directory(1:nch_run-3)//'bin_win\'//exe
+         write(*,1) jant,run_directory(1:nch_run-3)//'bin_win/'//exe
 1        format('You are attempting to use an antenna of type=',i4,'.',/
      +   'That requires an external antenna calculation program.',/
      +   'The required program=',a,'  does not exist.'/
@@ -61,15 +61,15 @@ c**********************************************************************
 c**********************************************************************
 C        Call ANTTYPxx.EXE to create GAINxx.DAT file:
 C                
-      PROGRAM=run_directory(1:nch_run-3)//'bin_win\'//exe//' '//
+      PROGRAM=run_directory(1:nch_run-3)//'bin_win/'//exe//' '//
      +             run_directory(1:nch_run)//' '//mode
       nch=lcount(PROGRAM,300)
-      call gh_exec(PROGRAM,nch,1)   !  execute and wait for ANTTYPxx.EXE
+C      call gh_exec(PROGRAM,nch,1)   !  execute and wait for ANTTYPxx.EXE
 
       if(mode.eq.' ') return     !  point-to-point is done
 
 C           Open GAINxx.DAT file
-      open(22,file=run_directory(1:nch_run)//'\'//fileant,
+      open(22,file=run_directory(1:nch_run)//'/'//fileant,
      1            status='old', err=910)
       rewind(22)  
       read(22,'(a)') alf
@@ -93,7 +93,7 @@ c*****End Harris mod      *************************************************
 900   write(*,901) run_directory(1:nch_run)//dat
 901   format('Could not create file:',a)
       go to 920
-910   write(*,911) run_directory(1:nch_run)//'\'//fileant
+910   write(*,911) run_directory(1:nch_run)//'/'//fileant
 911   format('Could not OPEN file:',a)
 920   write(*,921)
 921   format('Failure in subroutine harris')

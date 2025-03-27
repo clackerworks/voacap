@@ -1,6 +1,6 @@
 c# hfarea.f
       SUBROUTINE hfciraf(*)    !  output routine for CIRAF test points
-      include <windows.ins>
+C      include <windows.ins>
       common /Ccancel_batch/ icancel_batch
       common /cQUIET/ iquiet
       common /cCIRAF_TP/ nTP,idx_TP(911)
@@ -51,7 +51,7 @@ C
       common /Cday/ iday
       character alf*20
       logical doesit*1
-      logical*4 fexists@
+C      logical*4 fexists@
       integer*4 error_code4
       integer*2 error_code
 c------------------------------------------------------------------------
@@ -89,11 +89,11 @@ c***********************************************************************
 c*****************************************************************
       DO 900 itp=1,nTP            !  loop through CIRAF test points
 c          check to see if we should abort processing
-      doesit=fexists@(
-     +       run_directory(1:nch_run)//'\voaarea.abt',error_code4)
+C      doesit=fexists@(
+C     +       run_directory(1:nch_run)//'\voaarea.abt',error_code4)
       if(doesit) then      !  file exists, abort area calculations
-         call erase@(run_directory(1:nch_run)//'\voaarea.abt',
-     +                  error_code)   !  delete file first
+C         call erase@(run_directory(1:nch_run)//'\voaarea.abt',
+C     +                  error_code)   !  delete file first
          return 1
       end if
       if(icancel_batch.ne.0) return     !  other cancel button picked

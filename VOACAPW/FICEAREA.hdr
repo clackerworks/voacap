@@ -27,12 +27,13 @@ C
       REAL*4 rec_gain,rec_bear
 
       COMMON /zantenna/ color,cityname           !  reuse /cantenna/
-     @    ,nparms,parms,nlevels,conlevels,ishades
+     @    ,nparms,parms
      @    ,tlatdeg,tlondeg,tname,platdeg,plondeg,pname
+     @    ,xmtr_dir,xmtr_file,xmtr_model,design_freq,beam_main,TxPower
+     @    ,rec_dir,rec_file,rec_gain,rec_bear,nlevels,conlevels,ishades
      @    ,xmin,xmax,ymin,ymax
-     @    ,ngrid,gridtype,method,ipath,icoeffs
+     @    ,ngrid,gridtype,method,ipath,icoeffis
      @    ,montha,ssna,qindexa,ihour,Freq
      @    ,noise,amind,xlufp,rsn
      @    ,pmp,dmpx,fprob
-     @    ,xmtr_dir,xmtr_file,xmtr_model,design_freq,beam_main,TxPower
-     @    ,rec_dir,rec_file,rec_gain,rec_bear
+

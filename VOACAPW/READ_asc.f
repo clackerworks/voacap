@@ -11,7 +11,7 @@
          character run_directory*50
 c**********************************************************************
       nch_run=lcount(run_directory,50)
-      open(29,file=run_directory(1:nch_run)//'\'//model//'w.asc',
+      open(29,file=run_directory(1:nch_run)//'/'//model//'w.asc',
      +      status='old',err=999)
       rewind(29)
       i999=0

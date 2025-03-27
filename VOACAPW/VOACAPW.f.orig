@@ -1,11 +1,11 @@
 c# voacap.f
-C      winapp 80000,260000
+      winapp 80000,260000
 ccc      winapp 240000,500000
       PROGRAM VOACAPW
 *    +                (filein,fileout,areach)
       character COMPILER*3
-      parameter (COMPILER='w32')       !  32-bit compiler
-C      include <windows.ins>
+      parameter (COMPILER='W32')       !  32-bit compiler
+      include <windows.ins>
 C***********************************************************************
 c Execute with:
 c    VOACAPW.EXE [S] directory VOACAPX.DAT VOACAPX.OUT a  (P-P circuit)
@@ -105,7 +105,7 @@ C MORE COEFICENTS AND TABLES (SEE REDMAP):
       character cmnam*64,title*80,ich*1,area_meth*1,dum*1
       character message*80,run*50,PROGRAM*300
       logical*1 doesit
-C      logical*4 fexists@
+      logical*4 fexists@
       integer*4 window_handle,error_code
       integer*2 x_pos,y_pos,xsize,ysize
 C  PROGRAM VERSION NUMBER, PROGRAM CONTROL VARIABLES
@@ -124,12 +124,8 @@ C  PROGRAM VERSION NUMBER, PROGRAM CONTROL VARIABLES
       common /Ccancel_batch/ icancel_batch
       external cancel_batch
       character alf*80,append*1
-C      integer (kind=3) count_underflow
-C      logical (kind=2) permission
-      character*24 carg(5)
-      integer iarg
-      integer fstat
-   
+      integer (kind=3) count_underflow
+      logical (kind=2) permission
 C
 C SET PREDEFINED CONSTANTS:
 C
@@ -157,30 +153,22 @@ c******************************************************
       ntime=0
       ihr=1
 c******************************************************
-C      permission=.true.        !  ignore underflows
+      permission=.true.        !  ignore underflows
 ccc      permission=.false.
-C      call permit_underflow@(permission)
+      call permit_underflow@(permission)
 c******************************************************
-      nargs=iargc()
-      do 1002 n=1,5
-      call getarg(n,carg(n))
-1002  continue
-      parg=1
-      
-      run=carg(parg)
-      parg=parg+1
+      run=cmnam()
       nch=lenchar(run)
       if(nch.le.3) go to 930
-C      call ucase(run,nch)
+      call ucase(run,nch)
       iquiet=0
-      if(run(1:6).eq.'silent') then
+      if(run(1:6).eq.'SILENT') then
          iquiet=1
-         run=carg(parg)
-         parg=parg+1
+         run=cmnam()
          nch=lenchar(run)
          if(nch.le.3) go to 930
       end if
-      run_directory=run(1:nch)//'/run'
+      run_directory=run(1:nch)//'\RUN'
 ccc      call get_run
       call set_run            !  make sure we are in ..\RUN directory
       nch_run=lcount(run_directory,50)
@@ -190,7 +178,7 @@ c******************************************************
       ierase=0    !  do not erase
       alf='ERASE debug window'
       open(21,file=run_directory(1:nch_run-3)//
-     +        'database/debug.txt',status='old',err=101)
+     +        'database\debug.txt',status='old',err=101)
       rewind(21)
       read(21,'(a)') alf
       close(21)
@@ -199,49 +187,46 @@ ccc      ierase=0    !  do not erase
 c******************************************************
       iround=0    !  do not round
 ccc      open(21,file=run_directory(1:nch_run-3)//
-ccc     +        'database/round.txt',status='old',err=102)
+ccc     +        'database\round.txt',status='old',err=102)
 ccc      close(21)
 ccc      iround=1  !  do round
 ccc102   continue
 c******************************************************
       if(iquiet.eq.0) then
          title='VOACAP output for:'
-C        xsize=GetSystemMetrics(SM_CXSCREEN)
-C        ysize=GetSystemMetrics(SM_CYSCREEN)/3
+         xsize=GetSystemMetrics(SM_CXSCREEN)
+         ysize=GetSystemMetrics(SM_CYSCREEN)/3
          x_pos=0
          y_pos=0
-C        window_handle=create_window(title,x_pos,y_pos,xsize,ysize)
-C         ier=set_default_window@(window_handle)
+         window_handle=create_window(title,x_pos,y_pos,xsize,ysize)
+         ier=set_default_window@(window_handle)
       end if
 c****************************************************************
       if(iquiet.eq.0) 
      +write(*,'('' Executing from dir='',a)') run_directory(1:nch_run)
 c****************************************************************
-C     iharris=it_exist(run_directory(1:nch_run-3)//
-C    +        'bin_win\anttyp99.exe')
+      iharris=it_exist(run_directory(1:nch_run-3)//
+     +        'bin_win\anttyp99.exe')
 c****************************************************************
-C     call del_abt     !  delete the voaarea.abt & voacap.abt files
+      call del_abt     !  delete the voaarea.abt & voacap.abt files
       listing='Y'
       areach=' '
-      filein=carg(parg)
-      parg=parg+1
+      filein=cmnam()
 ccc      write(*,'('' filein='',a)') filein
       if(filein(1:1).eq.' ') filein='voacapx.dat'
       call lcase(filein,20)
       if(filein(1:5).eq.'area ' .or. filein(1:4).eq.'inv ') then ! area coverage
          areach='A'
          if(filein(1:1).eq.'i') areach='I'    !  inverse area coverage
-         area_meth=carg(parg)
-         parg=parg+1
+         area_meth=cmnam()
          if(area_meth.eq.' ') area_meth='c'
-         filein=carg(parg)
-         parg=parg+1
+         filein=cmnam()
          call lcase(filein,20)
 ccc         write(*,'('' filein='',a)') filein
          if(filein(1:12).eq.'voaareaw.cir') then    !  batch area coverage
-C            call seconds_since_1980@(start_time)    !  use to calc time
+            call seconds_since_1980@(start_time)    !  use to calc time
             iarea_batch=iarea_batch+1
-            open(61,file=run_directory(1:nch_run)//'/'//filein,
+            open(61,file=run_directory(1:nch_run)//'\'//filein,
      +                 status='old',err=920)
             rewind(61)
             call count_batch(61,narea_batch)  !  count # files to process
@@ -250,55 +235,51 @@ C            call seconds_since_1980@(start_time)    !  use to calc time
 39          format(' BATCH area file(',i4,' of ',i4,'):',a)
             write(alf_narea_batch,'(i4)') narea_batch
             write(alf_iarea_batch,'(i4)') iarea_batch
-C            call seconds_since_1980@(end_time)    !  use to calc time
+            call seconds_since_1980@(end_time)    !  use to calc time
             elapsed=end_time-start_time
             write(alf_elapsed_time,'(f8.1)') elapsed/60.
-C            k=winio@('%ca[Batch VOACAP Area calculations progress]&')
+            k=winio@('%ca[Batch VOACAP Area calculations progress]&')
             alf_fileout=' '
-C            k=winio@('fileout= %50st&',alf_fileout)
+            k=winio@('fileout= %50st&',alf_fileout)
             alf_label=' '
-C            k=winio@('%nl%80st&',alf_label)
-C            k=winio@('%nl%nl%cnCalculating file %tc[red]%4st %tc[black]'
-C     +               //' of '//alf_narea_batch//'&',alf_iarea_batch)
-C            k=winio@('%nl%cnElapsed time: %tc[red]%8st %tc[black]'//
-C     +               'minutes&',alf_elapsed_time)
+            k=winio@('%nl%80st&',alf_label)
+            k=winio@('%nl%nl%cnCalculating file %tc[red]%4st %tc[black]'
+     +               //' of '//alf_narea_batch//'&',alf_iarea_batch)
+            k=winio@('%nl%cnElapsed time: %tc[red]%8st %tc[black]'//
+     +               'minutes&',alf_elapsed_time)
             icancel_batch=0
-C            k=winio@('%nl%nl%cn%^bt[&Cancel]&',cancel_batch)
-C            k=winio@('%lw',iprocess_ctrl)      !  leave window open
+            k=winio@('%nl%nl%cn%^bt[&Cancel]&',cancel_batch)
+            k=winio@('%lw',iprocess_ctrl)      !  leave window open
          end if
          fileout='voaareax'
 ccc         write(*,'(''before areamap, filein='',a)') filein
          call areamap(areach,filein,fileout,area_meth)
          filein='voaareax.da1'
-         fileout='../areadata/'
-         if(areach.eq.'I') fileout='../area_inv/'
+         fileout='..\AREADATA\'
+         if(areach.eq.'I') fileout='..\AREA_INV\'
       else if(filein(1:6).eq.'batch ') then     !  Batch point-to-point
          areach='B'
-         file_batch=carg(parg)       !  is this "new" Special batch?
-         parg=parg+1
+         file_batch=cmnam()       !  is this "new" Special batch?
          if(file_batch(1:1).ne.' ') areach='S'    !  YES!!!
          filein='voacapx.dat'
-         fileout=carg(parg)
-         parg=parg+1
+         fileout=cmnam()
          if(fileout(1:1).eq.' ') fileout='voacapb.out'
          nch_out=lcount(fileout,64)
-C         call erase@(run_directory(1:nch_run)//'\'//
-C     +                  fileout(1:nch_out),istat)   !  delete any previous file
+         call erase@(run_directory(1:nch_run)//'\'//
+     +                  fileout(1:nch_out),istat)   !  delete any previous file
 ccc         write(*,'('' after erase, istat='',i5)') istat
          if(istat.ne.0 .and. iquiet.eq.0) then
-C            call dos_error_message@(istat,message)
+            call dos_error_message@(istat,message)
 ccc            write(*,'('' istat='',i5,1h=,a)') istat,message
 ccc            write(*,'('' file='',a)') run_directory(1:nch_run)//
 ccc     +                                '\'//fileout(1:nch_out)
          end if
       else
-         fileout=carg(parg)
-         parg=parg+1
+         fileout=cmnam()
          if(fileout(1:1).eq.' ') fileout='voacapx.out'
          call lcase(fileout,20)
       end if
-      append=carg(parg)       !  should we append to output file
-      parg=parg+1
+      append=cmnam()       !  should we append to output file
       if(append.eq.'A') append='a'
       listing=areach
       if(listing.eq.'n') listing='N'
@@ -306,7 +287,7 @@ ccc     +                                '\'//fileout(1:nch_out)
       if(filein (1:1).eq.' ' .or. fileout(1:1).eq.' ') 
      +      stop 'Execute with: voacapw filein fileout'
       iabort=0
-C     call del_abt      !  delete the voacap.abt & voaarea.abt files
+      call del_abt      !  delete the voacap.abt & voaarea.abt files
 c******************************************************
 C
 C.....REWIND INPUT LOGICAL UNITS BEFORE EXECUTION:
@@ -315,7 +296,7 @@ C                THIS IS THE USER-GENERATED INPUT FILE
 40    continue
 ccc      write(*,'(''after 40, area='',a)') areach
       if(areach.eq.'A' .or. areach.eq.'I') then  !  get real file name of output
-         open(LU5,file=run_directory(1:nch_run)//'/'//filein,
+         open(LU5,file=run_directory(1:nch_run)//'\'//filein,
      +        STATUS='OLD',iostat=ios,err=942) 
          rewind(lu5)
          read(lu5,'(20x,a)') areafile
@@ -339,7 +320,7 @@ ccc         write(*,'(''areafile='',a)') areafile
          call batch(38,'VOACAP',filein,icircuit,*999)
       else if(listing.eq.'S') then           !  New SPECIAL batch
          nch_batch=lcount(file_batch,64)
-         open(38,file=run_directory(1:nch_run)//'/'//
+         open(38,file=run_directory(1:nch_run)//'\'//
      +        file_batch(1:nch_batch),status='old',err=999)
          if(iquiet.eq.0)
      +   write(*,'('' Output is being written to: '',a,/)')
@@ -350,13 +331,9 @@ ccc         write(*,'(''areafile='',a)') areafile
 c***********************************************************
 ccc50    inquire(file=filein,exist=doesit)   !  if file does not exist, quit
 50    nch_in=lcount(filein,64)
-C      doesit=fexists@(
-C     +     run_directory(1:nch_run)//'\'//filein(1:nch_in),
-C     +     error_code)   !  if file does not exist, quit
-      inquire(file=run_directory(1:nch_run)//'/'//filein(1:nch_in)
-     +       ,exist=fstat)
-      doesit=.false.
-      if(fstat.eq.1) doesit=.true.
+      doesit=fexists@(
+     +     run_directory(1:nch_run)//'\'//filein(1:nch_in),
+     +     error_code)   !  if file does not exist, quit
       if(.NOT.doesit) go to 950
       if(iquiet.eq.0) then
          if(filein(1:7).eq.'voacapw') write(*,51) 'WANTED  '
@@ -371,7 +348,7 @@ c***********************************************************
             write(*,'('' fileout='',a)') fileout
             if(iarea_batch.ne.0) then
                alf_fileout=fileout
-C               call window_update@(alf_fileout)
+               call window_update@(alf_fileout)
             end if
          else if(listing.eq.'I') then
             write(*,'('' Inverse Area filein ='',a)') filein
@@ -380,7 +357,7 @@ C               call window_update@(alf_fileout)
 c***********************************************************
 ccc      write(*,'(''listing, areach='',a,1h:,a)') listing,areach
 ccc      write(*,'(''opening file='',a)') filein
-      open(LU5,file=run_directory(1:nch_run)//'/'//filein,STATUS='OLD',
+      open(LU5,file=run_directory(1:nch_run)//'\'//filein,STATUS='OLD',
      +              iostat=ios,err=944)
 ccc      write(*,'(''file opened'')')
       rewind(lu5)
@@ -392,7 +369,7 @@ ccc      write(*,'(''file opened'')')
      +   fileout(1:11).eq.'voacapt.out') ntime=1       !  plot vs time
       if(areach.eq.'B' .or.
      +   areach.eq.'S') then                  !  batch, use APPEND
-         open(LU6,file=run_directory(1:nch_run)//'/'//fileout,
+         open(LU6,file=run_directory(1:nch_run)//'\'//fileout,
      +        status='APPEND')
          formfeed=''
       else if(fileout(1:2).eq.'..') then
@@ -405,25 +382,25 @@ ccc         write(*,'(''areafile='',a)') areafile
          rewind(lu6)
          formfeed=' '
       else if(append.eq.'a') then
-         open(LU6,file=run_directory(1:nch_run)//'/'//fileout,
+         open(LU6,file=run_directory(1:nch_run)//'\'//fileout,
      +        status='APPEND')
          formfeed=''
 ccc         write(*,'('' file opened OK'')')
       else
 ccc         write(*,'('' opening file='',a)') 
 ccc     +                 run_directory(1:nch_run)//'\'//fileout
-         open(LU6,file=run_directory(1:nch_run)//'/'//fileout,
+         open(LU6,file=run_directory(1:nch_run)//'\'//fileout,
      +           iostat=ios,err=948)
          rewind(lu6)
          formfeed=' '
       end if
 ccc      write(*,'('' opening LU15/scratch'')')
 cccc      open(LU15,status='scratch')
-      open(LU15,file=run_directory(1:nch_run)//'/'//'LU15_VOA.TMP',
+      open(LU15,file=run_directory(1:nch_run)//'\'//'LU15_VOA.TMP',
      +           iostat=ios,err=960)
 ccc      write(*,'('' opening LU35/scratch'')')
 cccc      open(LU35,status='scratch')
-      open(LU35,file=run_directory(1:nch_run)//'/'//'LU35_VOA.TMP',
+      open(LU35,file=run_directory(1:nch_run)//'\'//'LU35_VOA.TMP',
      +           iostat=ios,err=962)
       REWIND LU15
       REWIND LU35
@@ -431,19 +408,19 @@ c***********************************************************
       if(ndistance.gt.1) then
          OPEN(48,file=run_directory(1:nch_run)//'\VOACAPD.IDX')
          rewind(48)
-C         call erase@(run_directory(1:nch_run)//'\VOACAPD.DST',istat)
+         call erase@(run_directory(1:nch_run)//'\VOACAPD.DST',istat)
          OPEN(49,file=run_directory(1:nch_run)//'\VOACAPD.DST',
      +        access='direct',form='unformatted',recl=108)
       end if
       if(ntime.ne.0) then
          OPEN(48,file=run_directory(1:nch_run)//'\VOACAPT.IDX')
          rewind(48)
-C         call erase@(run_directory(1:nch_run)//'\VOACAPT.DST',istat)
+         call erase@(run_directory(1:nch_run)//'\VOACAPT.DST',istat)
          OPEN(49,file=run_directory(1:nch_run)//'\VOACAPT.DST',
      +        access='direct',form='unformatted',recl=96)
       end if
 c***********************************************************
-      open(21,file=run_directory(1:nch_run-3)//'database/version.'//
+      open(21,file=run_directory(1:nch_run-3)//'database\version.'//
      +     COMPILER,status='old',iostat=ios,err=964)
       rewind(21)
       read(21,'(8x,a)') VERSN
@@ -477,7 +454,7 @@ c*********************************************************************
      +       fileout(13:nchf)//' '//
      +              area_meth
          nch=lcount(PROGRAM,300)
-C        call gh_exec(PROGRAM,nch,1)   !  execute and wait for WORLDWIN.EXE
+         call gh_exec(PROGRAM,nch,1)   !  execute and wait for WORLDWIN.EXE
 c**************************************************************
       end if
 c**************************************************************
@@ -527,25 +504,25 @@ c***********************************************************************
 936   close(71)
 940   stop 'VOACAPW.EXE not executed properly.'
 942   write(*,'(''OPEN error='',i5,'' file='',a)') ios,
-     +   run_directory(1:nch_run)//'/'//filein
+     +   run_directory(1:nch_run)//'\'//filein
       stop 'OPEN error at 942'
 944   write(*,'(''OPEN error='',i5,'' file='',a)') ios,
-     +   run_directory(1:nch_run)//'/'//filein
+     +   run_directory(1:nch_run)//'\'//filein
       stop 'OPEN error at 944'
 946   write(*,'(''OPEN error='',i5,'' file='',a)') ios,
      +   run_directory(1:nch_run-3)//fileout(4:nchf)
       stop 'OPEN error at 946'
 948   write(*,'(''OPEN error='',i5,'' file='',a)') ios,
-     +   run_directory(1:nch_run)//'/'//fileout
+     +   run_directory(1:nch_run)//'\'//fileout
       stop 'OPEN error at 948'
 960   write(*,'(''OPEN error='',i5,'' file='',a)') ios,
-     +   run_directory(1:nch_run)//'/'//'LU15_VOA.TMP'
+     +   run_directory(1:nch_run)//'\'//'LU15_VOA.TMP'
       stop 'OPEN error at 960'
 962   write(*,'(''OPEN error='',i5,'' file='',a)') ios,
-     +   run_directory(1:nch_run)//'/'//'LU35_VOA.TMP'
+     +   run_directory(1:nch_run)//'\'//'LU35_VOA.TMP'
       stop 'OPEN error at 962'
 964   write(*,'(''OPEN error='',i5,'' file='',a)') ios,
-     +   run_directory(1:nch_run-3)//'database/version.'//COMPILER
+     +   run_directory(1:nch_run-3)//'database\version.'//COMPILER
       stop 'OPEN error at 964'
 c******************************************************************
 950   CLOSE(LU15)
@@ -557,19 +534,19 @@ c******************************************************************
          iarea_batch=iarea_batch+1
          if(iquiet.eq.0) write(*,39) iarea_batch,narea_batch,filein
          write(alf_iarea_batch,'(i4)') iarea_batch
-C         call window_update@(alf_iarea_batch)
-C         call seconds_since_1980@(end_time)    !  use to calc time
+         call window_update@(alf_iarea_batch)
+         call seconds_since_1980@(end_time)    !  use to calc time
          elapsed=end_time-start_time
          write(alf_elapsed_time,'(f8.1)') elapsed/60.
-C         call window_update@(alf_elapsed_time)
+         call window_update@(alf_elapsed_time)
          fileout='voaareax'
 ccc         write(*,'(''BEFORE areamap, filein='',a)') filein
 ccc         write(*,'(''areach='',a)') areach
          call areamap(areach,filein,fileout,area_meth)
 ccc         areach=area
          filein='voaareax.da1'
-         fileout='../areadata/'
-         if(areach.eq.'I') fileout='../AREA_INV/'
+         fileout='..\AREADATA\'
+         if(areach.eq.'I') fileout='..\AREA_INV\'
          go to 40      !  begin next area calculation
 999   continue
       if(iarea_batch.ne.0) then      !  batch area finish
@@ -579,8 +556,8 @@ ccc         areach=area
             idone=idone-1            !  current one was not done
          end if
          iprocess_ctrl=0
-C         call window_update@(iprocess_ctrl)    !  remove process message
-C         call seconds_since_1980@(end_time)    !  use to calc time
+         call window_update@(iprocess_ctrl)    !  remove process message
+         call seconds_since_1980@(end_time)    !  use to calc time
          elapsed=end_time-start_time
          if(iquiet.eq.0) write(*,997) idone,elapsed/60.
 997      format(50(1h*),/,
@@ -588,7 +565,7 @@ C         call seconds_since_1980@(end_time)    !  use to calc time
      +          50(1h*))
       end if
       if(listing.ne.'B' .and. iarea_batch.eq.0)then!don't destroy BATCH output
-C        if(ierase.ne.0) call destroy_window(window_handle)
+         if(ierase.ne.0) call destroy_window(window_handle)
       else
          if(iabort.ne.0) write(*,998)
 998                      format(/,' Batch processing has been aborted.')
@@ -597,9 +574,9 @@ c******************************************************************
 c         close and delete temporary files
       close(LU15)
       close(LU35)
-C      call erase@(run_directory(1:nch_run)//'\'//'LU15_VOA.TMP',istat)
-C      call erase@(run_directory(1:nch_run)//'\'//'LU35_VOA.TMP',istat)
-C      call underflow_count@(count_underflow)  !  see if any underflows occured
+      call erase@(run_directory(1:nch_run)//'\'//'LU15_VOA.TMP',istat)
+      call erase@(run_directory(1:nch_run)//'\'//'LU35_VOA.TMP',istat)
+      call underflow_count@(count_underflow)  !  see if any underflows occured
 ccc      write(*,'(''underflow='',i8)') count_underflow
       END
 c
@@ -629,7 +606,7 @@ c***********************************************************
 c          if user values do not exist,
 c          read the default values from ..\database\north_pole.txt
 200   open(lu,file=run_directory(1:nch_run-3)//
-     +   'database/north_pole.txt',status='old',err=300)
+     +   'database\north_pole.txt',status='old',err=300)
       rewind(lu)
       read(lu,*,err=250) glat,glon
       close(lu)

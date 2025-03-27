@@ -10,4 +10,4 @@ C
       REAL*4 ssn_eff(5)
       REAL*4 ssn_ave
 
-      COMMON /FIELD_SSN/flat,flon,utime,fof2,ssn_eff,ssn_ave
+      COMMON /FIELD_SSN/fof2,flat,flon,utime,ssn_eff,ssn_ave

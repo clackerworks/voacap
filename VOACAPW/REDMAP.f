@@ -51,14 +51,14 @@ c*****************************************************************
       if(coeff.ne.'URSI') coeff='CCIR'    !  default is CCIR
 c          read the foF2 coefficients (CCIR or URSI88)
       write(foF2_name,'(4hfof2,a4,4h.daw)') coeff
-      OPEN(27,FILE=run_directory(1:nch_run-3)//'coeffs\'//foF2_name,
+      OPEN(27,FILE=run_directory(1:nch_run-3)//'coeffs/'//foF2_name,
      +       status='old',form='unformatted',access='direct',recl=7904)
       read(27,rec=month) XF2COF
       close(27)
 c*****************************************************************
 c          read the rest of the coefficients
       write(coeff_name,'(5hcoeff,i2.2,5hw.bin)') MONTH
-      OPEN(27,FILE=run_directory(1:nch_run-3)//'coeffs\'//coeff_name,
+      OPEN(27,FILE=run_directory(1:nch_run-3)//'coeffs/'//coeff_name,
      +       status='old',form='unformatted')
       rewind(27)
       READ(27,END=300,ERR=400) IKIM

@@ -1,6 +1,6 @@
 c# hfarea.f
       SUBROUTINE hfarea(*)
-      include <windows.ins>
+C      include <windows.ins>
       common /Ccancel_batch/ icancel_batch
       common /cQUIET/ iquiet
       common /Careach/ areach      !  =I=inverse area
@@ -56,7 +56,7 @@ C
       common /Cday/ iday
       character alf*20
       logical doesit*1
-      logical*4 fexists@
+C      logical*4 fexists@
       integer*4 error_code4
       integer*2 error_code
       data D2R/.01745329/
@@ -112,20 +112,20 @@ c*****************************************************************
          else
             write(alf,'(i3)') iy
          end if
-         call soua@(alf)
-         if(mod(iy,20).eq.0) then
-            call sou@(' ')            !  cause a <new line>
-            call coua@('        ')    !  space over to line things up
-         end if
+C         call soua@(alf)
+C         if(mod(iy,20).eq.0) then
+C           call sou@(' ')            !  cause a <new line>
+C           call coua@('        ')    !  space over to line things up
+C        end if
       end if
 c          check to see if we should abort processing
-      doesit=fexists@(
-     +       run_directory(1:nch_run)//'\voaarea.abt',error_code4)
-      if(doesit) then      !  file exists, abort area calculations
-         call erase@(run_directory(1:nch_run)//'\voaarea.abt',
-     +                  error_code)   !  delete file first
-         return 1
-      end if
+C     doesit=fexists@(
+C    +       run_directory(1:nch_run)//'\voaarea.abt',error_code4)
+C     if(doesit) then      !  file exists, abort area calculations
+C        call erase@(run_directory(1:nch_run)//'\voaarea.abt',
+C    +                  error_code)   !  delete file first
+C        return 1
+C     end if
       if(icancel_batch.ne.0) return     !  other cancel button picked
       DO 900 IX=1,NX
       call yieldit    !  yield for Windows
@@ -208,7 +208,7 @@ ccc111   format(5i5,f10.1,f10.3)
       call outarea(ix,iy)
 C==================================================================
 900   CONTINUE
-      if(iquiet.eq.0) call sou@(']')
+C     if(iquiet.eq.0) call sou@(']')
 C******************************************************************
 C.....END OF RUN
       RETURN

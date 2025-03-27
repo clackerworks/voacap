@@ -3,7 +3,7 @@ c# ioncap.f
 c******************************************************************
 c            this routine executes VOACAP 
 c******************************************************************
-      INCLUDE 'FICEPAC.HDR'
+      INCLUDE 'FICEPAC.hdr'
       common /cbotlines/ nbotlines,linesbot(14)
       common /ctoplines/ ntoplines,linestop( 7)
       common /crun_directory/ run_directory
@@ -16,9 +16,9 @@ c******************************************************************
 C******************************************************************
       nch_run=lcount(run_directory,50)
       if(igraph.eq.0) then
-         open(31,file=run_directory(1:nch_run)//'\'//'voacapx.dat')
+         open(31,file=run_directory(1:nch_run)//'/'//'voacapx.dat')
       else
-         open(31,file=run_directory(1:nch_run)//'\'//'voacapg.dat')
+         open(31,file=run_directory(1:nch_run)//'/'//'voacapg.dat')
       end if
       rewind(31)
 c***************************************************************

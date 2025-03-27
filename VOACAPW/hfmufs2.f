@@ -90,7 +90,7 @@ c*****************************************************************
      +              'SIGLW SIGUP SNRLW SNRUP TGAIN RGAIN SNRxx DBM   ')
          if(iquiet.eq.0) then
             write(*,'('' Calculating Distance plot'')')
-            call soua@(' UT[')
+C            call soua@(' UT[')
          end if
       end if
       if(ntime.ne.0) then       !  plots vs TIME
@@ -104,7 +104,7 @@ c*****************************************************************
       JT=ihours(ihr)
       if(ndistance.ne.1 .and. iquiet.eq.0) then
          write(alf,'(i3)') JT
-         call soua@(alf)
+C         call soua@(alf)
       end if
       do 400 idistance=1,ndistance
       if(idistance.eq.1) then

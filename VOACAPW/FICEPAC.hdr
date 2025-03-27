@@ -34,13 +34,14 @@ C
       CHARACTER rec_dir*8,rec_file*12
       REAL*4 rec_bear,rec_gain
 
-      COMMON /FIELDS/method,methodname,icoeffs,year
-     @       ,montha,ssna,qindexa,ihr1,ihr2,ihrinc,itimecode
+      COMMON /FIELDS/qindexa,method,icoeffs,year
+     @       ,ssna,ihr1,ihr2,ihrinc,itimecode
      @       ,tlatdeg,tlondeg,tname,rlatdeg,rlondeg,rname
      @       ,ipath,gcdkm,gcdnmi,gcdmi
      @       ,TazR,freq,noise
      @       ,amind,xlufp,rsn,pmp,dmpx,fprob
-     @       ,rec_dir,rec_file,rec_bear,rec_gain
+     @       ,rec_dir,rec_file,rec_bear,rec_gain,methodname
+
 
       INTEGER*4 numants,Index_ant
       INTEGER*4 minfreq

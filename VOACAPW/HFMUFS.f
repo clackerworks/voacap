@@ -2,7 +2,7 @@ c###hfmufs.for
       SUBROUTINE HFMUFS(fileout,*)
       character fileout*64,file_si*64
       logical doesit*1
-      logical*4 fexists@
+C     logical*4 fexists@
       integer*4 error_code4
       integer*2 error_code
       common /cQUIET/ iquiet
@@ -89,7 +89,7 @@ C.....RETURN IF RUN OPTION IS .LE. 0
          nch=lcount(file_si,64)
          file_si(nch-3:nch)='.si '
          if(ionce.eq.0) then
-            open(18,file=run_directory(1:nch_run)//'\'//file_si(1:nch))
+            open(18,file=run_directory(1:nch_run)//'/'//file_si(1:nch))
             rewind(18)
             ionce=1
          end if
@@ -103,13 +103,13 @@ c          required major changes to DECRED and following loop
       call yieldit               !  yield for Windows operations
 c          check to see if we should abort processing
 ccc      inquire(file='voacap.abt',exist=doesit)
-      doesit=fexists@(
-     +    run_directory(1:nch_run)//'\voacap.abt',error_code4)
-      if(doesit) then      !  file exists, abort area calculations
-         call erase@(run_directory(1:nch_run)//'\voacap.abt',
-     +               error_code)   !  delete file first
-         return 1
-      end if
+C     doesit=fexists@(
+C    +    run_directory(1:nch_run)//'\voacap.abt',error_code4)
+C     if(doesit) then      !  file exists, abort area calculations
+C        call erase@(run_directory(1:nch_run)//'\voacap.abt',
+C    +               error_code)   !  delete file first
+C        return 1
+C     end if
       MONTH=MONTHS(imonth)
       if(MONTH.eq.0) go to 100     !  no more months
       SSN=SUNSP(imonth)

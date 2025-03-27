@@ -191,13 +191,13 @@ c**********************************************************
       END
 C---------------------------------
       subroutine progress_label(label)
-      include <windows.ins>
+C      include <windows.ins>
       character label*(*)
       common /Cprogress/ iarea_batch,alf_label
          character alf_label*80
       if(iarea_batch.eq.0) return
       alf_label=label
-      call window_update@(alf_label)
+C     call window_update@(alf_label)
       RETURN
       END
 C---------------------------------

@@ -270,9 +270,9 @@ C125PC      integer*2 imddl,igdfx,itlos,ihpfx,lNANG
 C125PC      COMMON/INDICEZ/ISP,ISZ,IFQN,IUR,NMS(11,24,4,2)
 c----------------------------------------------------------------
 c>>>>>A.S.
+      LOGICAL FOUND
       DIMENSION LX(3)
       DATA LX/1,3,5/
-      LOGICAL FOUND
 c<<<<<       
 C.....FOR MAX. NUMBER OF HOPS
       DEND = AMIN1(4000.,GCDKM)

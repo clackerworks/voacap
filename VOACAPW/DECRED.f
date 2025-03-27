@@ -284,7 +284,7 @@ C***********************************************************************
       write(gainfile,'(4hGAIN,i2.2,4h.DAT)') iantr
 ccc      write(*,'('' opening file='',a)') run_directory(1:nch_run)//
 ccc     +                                         '\'//gainfile
-      open(lu26,file=run_directory(1:nch_run)//'\'//gainfile,
+      open(lu26,file=run_directory(1:nch_run)//'/'//gainfile,
      +     status='old',form='formatted')
       rewind(lu26)
       read(lu26,331) anttype(iantr),antname(iantr)

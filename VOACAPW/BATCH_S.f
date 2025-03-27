@@ -59,7 +59,7 @@ c          read new cards and replace
 c**************************************************************
 c          save deck and process
 200   nch_run=lenchar(run_directory)
-      open(31,file=run_directory(1:nch_run)//'\'//model//'x.dat')
+      open(31,file=run_directory(1:nch_run)//'/'//model//'x.dat')
       rewind(31)
       do 210 i=1,ncards
       nch=lenchar(cards(i))
