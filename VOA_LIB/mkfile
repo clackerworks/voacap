@@ -1,0 +1,40 @@
+</$objtype/mkfile
+F77 = f2c
+CC = pcc
+
+CFLAGS = -I $home/lib/f2c/include
+
+OFILES = \
+CHARDEG.$O \
+COL_DOS.$O \
+DAZEL1.$O \
+DEG2CHR.$O \
+DOSCOLR.$O \
+ICOLDOS.$O \
+LCASE.$O \
+LCOUNT.$O \
+RBLANKC.$O \
+SET_RUN.$O \
+SUFFIX.$O \
+UCASE.$O \
+WINCOLR.$O \
+YIELDIT.$O \
+lenchar.$O \
+pwrcut.$O \
+
+
+%.c: %.f
+    $F77 $stem.f
+
+%.$O: %.c
+    $CC -c $CFLAGS $stem.c
+
+libsvoa.a$O: $OFILES
+     ar r $target $newprereq
+
+install:V:
+     mkdir -p $home/lib/voa
+     cp libsvoa.a$O $home/lib/voa/libsvoa.a
+
+clean:V:
+        rm -f libsvoa.a$O *.$O *.c

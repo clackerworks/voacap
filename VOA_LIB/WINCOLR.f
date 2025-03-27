@@ -2,7 +2,8 @@ c# WINcolr.for
       subroutine WINcolr    !  read DOS color table
       common /WIN_col/ ncolors,DOS_colors(20),colors(20),
      +            ncities_colors,DOS_cities(7),cities_colors(7),
-     +            ncontours_colors,DOS_contours(8),contours_colors(8)
+     +            DOS_contours(8),contours_colors(8)
+C     +            ncontours_colors,DOS_contours(8),contours_colors(8)
          character DOS_colors*6,colors*10
          character DOS_cities*6,cities_colors*20
          character DOS_contours*6,contours_colors*20

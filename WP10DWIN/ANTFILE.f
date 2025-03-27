@@ -10,7 +10,7 @@ c          concatenate dir\file into antname
       antname(n:n)=dir(i:i)
 10    continue
 15    n=n+1
-      antname(n:n)='\'
+      antname(n:n)='/'
       do 20 i=1,12
       if(file(i:i).eq.' ') go to 25
       n=n+1

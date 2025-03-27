@@ -1,0 +1,59 @@
+</$objtype/mkfile
+F77 = f2c
+CC = pcc
+
+CFLAGS = -I $home/lib/f2c/include
+
+OFILES = \
+ANTCAL.$O \
+ANTFILE.$O \
+ANTINIT.$O \
+ANTINIT2.$O \
+ANTMODEL.$O \
+AZMAX.$O \
+BESSEL.$O \
+CCIRGAIN.$O \
+CISI.$O \
+CURCAL.$O \
+CURNORM.$O \
+CURTAIN.$O \
+DAZEL0.$O \
+DBLTRAP.$O \
+F2.$O \
+GAINORM.$O \
+GAINREL.$O \
+GAINTERB.$O \
+GAINTERP.$O \
+GETANTYP.$O \
+GETDIRS.$O \
+GETFILES.$O \
+INVCON.$O \
+IONGAIN.$O \
+IONINIT.$O \
+LEN_TRIM.$O \
+LOGPARM.$O \
+PARABOL.$O \
+PARMPREC.$O \
+PATTRN0.$O \
+READANT.$O \
+REFCOF.$O \
+SETMAXGA.$O \
+SURFIM.$O \
+TRIGFUN.$O \
+
+
+%.c: %.f
+    $F77 $stem.f
+
+%.$O: %.c
+    $CC -c $CFLAGS $stem.c
+
+libswp10.a$O: $OFILES
+     ar r $target $newprereq
+
+install:V:
+     mkdir -p $home/lib/voa
+     cp libswp10.a$O $home/lib/wp10/libswp10.a
+
+clean:V:
+        rm -f libswp10.a$O *.$O *.c

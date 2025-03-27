@@ -1,0 +1,41 @@
+</$objtype/mkfile
+F77 = f2c
+CC = pcc
+
+CFLAGS = -I $home/lib/f2c/include
+
+OFILES = \
+AGAUSS.$O \
+CANG.$O \
+CMPINV.$O \
+COLL.$O \
+CSZ1.$O \
+ECH.$O \
+MATINV.$O \
+MUFESGAN.$O \
+MUFESINT.$O \
+MUTUAL.$O \
+ONEJ.$O \
+REACT.$O \
+RESIST.$O \
+SIM.$O \
+SQMULT.$O \
+ZMUT.$O \
+
+
+
+%.c: %.f
+    $F77 -f $stem.f
+
+%.$O: %.c
+    $CC -c $CFLAGS $stem.c
+
+libshfmuf.a$O: $OFILES
+     ar r $target $newprereq
+
+install:V:
+     mkdir -p $home/lib/voa
+     cp libshfmuf.a$O $home/lib/hfmuf/libshfmuf.a
+
+clean:V:
+        rm -f libsvoa.a$O *.$O *.c
